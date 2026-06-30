@@ -1,0 +1,3830 @@
+{
+  "erbil": {
+    "زانکۆی هەولێری پزیشکی": {
+      "بەشی پزیشکی": [
+        {
+          "department": "پزیشکی گشتی",
+          "evening": "-",
+          "parallel": "97.2",
+          "online": "97.787"
+        },
+        {
+          "department": "پزیشکی ددان",
+          "evening": "-",
+          "parallel": "96.4",
+          "online": "96.667"
+        },
+        {
+          "department": "دەرمانسازی",
+          "evening": "-",
+          "parallel": "95.785",
+          "online": "96"
+        }
+      ],
+      "بەشی پەرستاری": [
+        {
+          "department": "پەرستاری",
+          "evening": "-",
+          "parallel": "94",
+          "online": "94.804"
+        },
+        {
+          "department": "پەرستاری - مناڵبوون",
+          "evening": "-",
+          "parallel": "87.097",
+          "online": "89.421"
+        }
+      ],
+      "بەشی زانستی تەندروستی": [
+        {
+          "department": "مایکرۆبایۆلۆجی",
+          "evening": "-",
+          "parallel": "92.839",
+          "online": "94.4"
+        },
+        {
+          "department": "کیمیای ژیانی",
+          "evening": "-",
+          "parallel": "87.978",
+          "online": "91.6"
+        },
+        {
+          "department": "چارەسەری فیزیکی",
+          "evening": "-",
+          "parallel": "60",
+          "online": "65"
+        },
+        {
+          "department": "تەندروستی گشتی",
+          "evening": "-",
+          "parallel": "60",
+          "online": "65"
+        },
+        {
+          "department": "خواردنەوە و پەرهیزکاری",
+          "evening": "-",
+          "parallel": "81.401",
+          "online": "84.368"
+        }
+      ]
+    },
+    "زانکۆی سەلاحەدین": {
+      "کۆلێژی پزیشکی": [
+        {
+          "department": "پزیشکی ئاژەڵان",
+          "evening": "-",
+          "parallel": "90",
+          "online": "90.737"
+        }
+      ],
+      "کۆلێژی ئەندازیاری": [
+        {
+          "department": "ئەندازیاری تەلارسازی",
+          "evening": "-",
+          "parallel": "95.066",
+          "online": "95.646"
+        },
+        {
+          "department": "ئەندازیاری نەرمەکاڵا",
+          "evening": "-",
+          "parallel": "95.066",
+          "online": "95.626"
+        },
+        {
+          "department": "ئەندازیاری شارستانی",
+          "evening": "-",
+          "parallel": "90.68",
+          "online": "93.8"
+        },
+        {
+          "department": "کیمیا و پێترۆکیمیا",
+          "evening": "-",
+          "parallel": "83.359",
+          "online": "86.12"
+        },
+        {
+          "department": "کارەبا و وزەی نوێبووەوە",
+          "evening": "-",
+          "parallel": "84.422",
+          "online": "87"
+        },
+        {
+          "department": "کارەبا و کۆمپیوتەر",
+          "evening": "-",
+          "parallel": "87.009",
+          "online": "89.946"
+        },
+        {
+          "department": "کارەبا و ئەلیکترۆنیک",
+          "evening": "-",
+          "parallel": "85.385",
+          "online": "87.52"
+        },
+        {
+          "department": "مەکانیک و مەکاترۆنیک",
+          "evening": "-",
+          "parallel": "86.233",
+          "online": "88.4"
+        },
+        {
+          "department": "سەرچاوەکانی ئاو",
+          "evening": "-",
+          "parallel": "72.07",
+          "online": "75.163"
+        },
+        {
+          "department": "کۆچبەری",
+          "evening": "-",
+          "parallel": "78.763",
+          "online": "81.919"
+        },
+        {
+          "department": "ئەندازیاری فڕۆکەسازی",
+          "evening": "-",
+          "parallel": "-",
+          "online": "78.599"
+        }
+      ],
+      "کۆلێژی زانست": [
+        {
+          "department": "بایۆلۆجی - جینی مۆلیکولی",
+          "evening": "-",
+          "parallel": "85.829",
+          "online": "89.08"
+        },
+        {
+          "department": "بایۆلۆجی پزیشکی",
+          "evening": "-",
+          "parallel": "88.478",
+          "online": "89.08"
+        },
+        {
+          "department": "بایۆلۆجی گشتی",
+          "evening": "-",
+          "parallel": "85.3",
+          "online": "88"
+        },
+        {
+          "department": "تەکنەلۆجیای زانیاری",
+          "evening": "-",
+          "parallel": "84.86",
+          "online": "90.976"
+        },
+        {
+          "department": "کیمیا",
+          "evening": "-",
+          "parallel": "78.68",
+          "online": "82.48"
+        },
+        {
+          "department": "فیزیای پزیشکی",
+          "evening": "-",
+          "parallel": "78.824",
+          "online": "83.014"
+        },
+        {
+          "department": "فیزیای گشتی",
+          "evening": "-",
+          "parallel": "71.764",
+          "online": "74.429"
+        },
+        {
+          "department": "نەوت و زەوی",
+          "evening": "-",
+          "parallel": "63.225",
+          "online": "65.776"
+        },
+        {
+          "department": "تەندروستی و ژینگە",
+          "evening": "-",
+          "parallel": "58.372",
+          "online": "61.637"
+        },
+        {
+          "department": "بیرکاری",
+          "evening": "-",
+          "parallel": "61.25",
+          "online": "65.029"
+        }
+      ],
+      "کۆلێژی زانستی کۆمپیوتەر": [
+        {
+          "department": "زانستی کۆمپیوتەر CS",
+          "evening": "-",
+          "parallel": "83.94",
+          "online": "86.76"
+        },
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "-",
+          "parallel": "79.566",
+          "online": "87.8"
+        },
+        {
+          "department": "زیرەکی دەستکرد AI",
+          "evening": "-",
+          "parallel": "85.286",
+          "online": "87.8"
+        }
+      ],
+      "کۆلێژی کشتوکاڵ": [
+        {
+          "department": "سامانی ئاژەڵی",
+          "evening": "-",
+          "parallel": "55.075",
+          "online": "60"
+        },
+        {
+          "department": "بەرهەمی کشتوکاڵی پزیشکی",
+          "evening": "-",
+          "parallel": "55.046",
+          "online": "60.398"
+        },
+        {
+          "department": "پاراستنی ڕووەک",
+          "evening": "-",
+          "parallel": "54.2",
+          "online": "59.799"
+        },
+        {
+          "department": "پیشەسازی خواردنی",
+          "evening": "-",
+          "parallel": "54.625",
+          "online": "59.536"
+        },
+        {
+          "department": "خاک و ئاو",
+          "evening": "-",
+          "parallel": "55.555",
+          "online": "61.983"
+        },
+        {
+          "department": "دارستان",
+          "evening": "-",
+          "parallel": "55",
+          "online": "60"
+        },
+        {
+          "department": "سامانی ئاوی و ماسیوانی",
+          "evening": "-",
+          "parallel": "58.399",
+          "online": "60"
+        }
+      ],
+      "کۆلێژی زانستی سیاسی": [
+        {
+          "department": "پەیوەندییە نێودەوڵەتییەکان و دیپلۆماسی",
+          "evening": "-",
+          "parallel": "61.099",
+          "online": "63.6"
+        },
+        {
+          "department": "سیاسەتی گشتی",
+          "evening": "-",
+          "parallel": "58.2",
+          "online": "63.519"
+        }
+      ],
+      "کۆلێژی یاسایی": [
+        {
+          "department": "یاسا",
+          "evening": "-",
+          "parallel": "80.1",
+          "online": "83.3"
+        }
+      ],
+      "کۆلێژی زانستی ئاینی": [
+        {
+          "department": "شەریعەت",
+          "evening": "-",
+          "parallel": "56.459",
+          "online": "58.165"
+        },
+        {
+          "department": "لێکۆڵینەوەی ئیسلامی",
+          "evening": "-",
+          "parallel": "53.688",
+          "online": "57.8"
+        },
+        {
+          "department": "پەروەردەی ئایینی",
+          "evening": "-",
+          "parallel": "54.291",
+          "online": "59.229"
+        },
+        {
+          "department": "خوتبەخوێندن و ڕاگەیاندنی ئایینی",
+          "evening": "-",
+          "parallel": "53.67",
+          "online": "60.098"
+        }
+      ],
+      "کۆلێژی زمانەکان": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "-",
+          "parallel": "58.23",
+          "online": "60.4"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "-",
+          "parallel": "72.953",
+          "online": "76.2"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "-",
+          "parallel": "59.1",
+          "online": "62.399"
+        },
+        {
+          "department": "زمانی ئەڵمانی",
+          "evening": "-",
+          "parallel": "58.013",
+          "online": "58.099"
+        },
+        {
+          "department": "زمانی فەرەنسی",
+          "evening": "-",
+          "parallel": "55.56",
+          "online": "59.099"
+        },
+        {
+          "department": "زمانی تورکی",
+          "evening": "-",
+          "parallel": "55.721",
+          "online": "57.727"
+        },
+        {
+          "department": "زمانی فارسی",
+          "evening": "-",
+          "parallel": "53.787",
+          "online": "59"
+        },
+        {
+          "department": "زمانی چینی",
+          "evening": "-",
+          "parallel": "56.999",
+          "online": "58.703"
+        },
+        {
+          "department": "وەرگێڕان",
+          "evening": "-",
+          "parallel": "68.38",
+          "online": "71.799"
+        }
+      ],
+      "کۆلێژی کارگێڕی و دارایی": [
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "60.9",
+          "parallel": "65.999",
+          "online": "70.425"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "61.825",
+          "parallel": "67.893",
+          "online": "71.579"
+        },
+        {
+          "department": "بەڕێوەبردنی مارکێتینگ",
+          "evening": "56.4",
+          "parallel": "60.547",
+          "online": "62.999"
+        },
+        {
+          "department": "ئابووری",
+          "evening": "57.208",
+          "parallel": "60.9",
+          "online": "63.955"
+        },
+        {
+          "department": "زانستی دارایی",
+          "evening": "-",
+          "parallel": "60.614",
+          "online": "62.2"
+        },
+        {
+          "department": "ئامار و زانیاری",
+          "evening": "-",
+          "parallel": "57.585",
+          "online": "58.037"
+        }
+      ],
+      "کۆلێژی پەروەردە": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "58.212",
+          "parallel": "61.546",
+          "online": "66.645"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "68.949",
+          "parallel": "75.9",
+          "online": "69.345"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "59.057",
+          "parallel": "63.4",
+          "online": "80.868"
+        },
+        {
+          "department": "زمانی سریانی",
+          "evening": "61.199",
+          "parallel": "57.26",
+          "online": "53.8"
+        },
+        {
+          "department": "بایۆلۆجی",
+          "evening": "-",
+          "parallel": "70.865",
+          "online": "74.9"
+        },
+        {
+          "department": "کیمیا",
+          "evening": "-",
+          "parallel": "68.599",
+          "online": "72.763"
+        },
+        {
+          "department": "فیزیا",
+          "evening": "-",
+          "parallel": "65.802",
+          "online": "70.199"
+        },
+        {
+          "department": "بیرکاری",
+          "evening": "-",
+          "parallel": "64.523",
+          "online": "68.537"
+        },
+        {
+          "department": "پەروەردەی تایبەت",
+          "evening": "55.157",
+          "parallel": "57.662",
+          "online": "57.4"
+        },
+        {
+          "department": "ڕێنمایی پەروەردەیی و دەروونی",
+          "evening": "-",
+          "parallel": "58.199",
+          "online": "59.014"
+        }
+      ],
+      "کۆلێژی پەروەردەی مەخموور": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "50",
+          "parallel": "58.575",
+          "online": "60.941"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "50",
+          "parallel": "59.399",
+          "online": "62.399"
+        }
+      ],
+      "کۆلێژی پەروەردەی شەقڵاوە": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "-",
+          "parallel": "59.149",
+          "online": "62.499"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "-",
+          "parallel": "70.699",
+          "online": "75.2"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "-",
+          "parallel": "61.4",
+          "online": "64.999"
+        },
+        {
+          "department": "بایۆلۆجی",
+          "evening": "-",
+          "parallel": "68.6",
+          "online": "72.386"
+        },
+        {
+          "department": "فیزیا",
+          "evening": "-",
+          "parallel": "63.686",
+          "online": "66.631"
+        },
+        {
+          "department": "وەرزش",
+          "evening": "-",
+          "parallel": "54.939",
+          "online": "54.586"
+        }
+      ],
+      "کۆلێژی پەروەردەی بنەڕەت": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "57.7",
+          "parallel": "60.899",
+          "online": "64.7"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "66.472",
+          "parallel": "71.017",
+          "online": "74.936"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "58.6",
+          "parallel": "62.404",
+          "online": "68.228"
+        },
+        {
+          "department": "بیرکاری",
+          "evening": "59",
+          "parallel": "61.6",
+          "online": "63.967"
+        },
+        {
+          "department": "زانستی گشتی",
+          "evening": "59.897",
+          "parallel": "65.068",
+          "online": "68.363"
+        },
+        {
+          "department": "کۆمەڵناسی",
+          "evening": "59.321",
+          "parallel": "60.2",
+          "online": "63.9"
+        },
+        {
+          "department": "پەروەردەی وەرزشی",
+          "evening": "-",
+          "parallel": "51.886",
+          "online": "53.086"
+        },
+        {
+          "department": "باخچەی مناڵان",
+          "evening": "56.616",
+          "parallel": "59.42",
+          "online": "61.8"
+        }
+      ],
+      "کۆلێژی ئاداب": [
+        {
+          "department": "مێژوو",
+          "evening": "-",
+          "parallel": "58.2",
+          "online": "57.004"
+        },
+        {
+          "department": "فەلسەفە",
+          "evening": "-",
+          "parallel": "54.1",
+          "online": "60"
+        },
+        {
+          "department": "جوگرافیا",
+          "evening": "-",
+          "parallel": "57.891",
+          "online": "58.505"
+        },
+        {
+          "department": "شوێنەوار",
+          "evening": "-",
+          "parallel": "53.6",
+          "online": "60.028"
+        },
+        {
+          "department": "کۆمەڵناسی",
+          "evening": "-",
+          "parallel": "56.87",
+          "online": "57.822"
+        },
+        {
+          "department": "دەروونناسی",
+          "evening": "-",
+          "parallel": "58.399",
+          "online": "60.677"
+        },
+        {
+          "department": "ڕاگەیاندن",
+          "evening": "-",
+          "parallel": "57.645",
+          "online": "62.672"
+        },
+        {
+          "department": "کاری کۆمەڵایەتی",
+          "evening": "-",
+          "parallel": "55.8",
+          "online": "57.472"
+        }
+      ],
+      "کۆلێژی هونەرە جوانەکان": [
+        {
+          "department": "هونەری دیداری",
+          "evening": "-",
+          "parallel": "70.384",
+          "online": "63.836"
+        },
+        {
+          "department": "موسیقا",
+          "evening": "-",
+          "parallel": "50",
+          "online": "55"
+        },
+        {
+          "department": "سینەما و شانۆ",
+          "evening": "-",
+          "parallel": "50",
+          "online": "55"
+        }
+      ]
+    },
+    "زانکۆی پۆلیتەکنیکی هەولێر": {
+      "کۆلێژی تەندروستی پزیشکی": [
+        {
+          "department": "شیکارییە نەخۆشەکان",
+          "evening": "-",
+          "parallel": "90",
+          "online": "92.734"
+        },
+        {
+          "department": "تەکنیکی تیشکی پزیشکی",
+          "evening": "-",
+          "parallel": "88.739",
+          "online": "91.792"
+        },
+        {
+          "department": "چارەسەری فیزیکی",
+          "evening": "-",
+          "parallel": "87.28",
+          "online": "89.6"
+        }
+      ],
+      "کۆلێژی ئەندازیاری تەکنیکی": [
+        {
+          "department": "تەکنیکی ئەندازیاری شارستانی",
+          "evening": "-",
+          "parallel": "88.52",
+          "online": "90.234"
+        },
+        {
+          "department": "تەکنیکی ڕێگا و پرد",
+          "evening": "-",
+          "parallel": "74.044",
+          "online": "78.143"
+        },
+        {
+          "department": "تەکنیکی مەکانیک و وزە",
+          "evening": "-",
+          "parallel": "81.736",
+          "online": "83.733"
+        },
+        {
+          "department": "ئەندازیاری پێداویستیەکانی باڵەخانە",
+          "evening": "-",
+          "parallel": "77.411",
+          "online": "72.505"
+        },
+        {
+          "department": "ئەندازیاری دیزاینی باخچە",
+          "evening": "-",
+          "parallel": "91.033",
+          "online": "76.199"
+        }
+      ],
+      "کۆلێژی ئەندازیاری و کۆمپیوتەر": [
+        {
+          "department": "زیرەکی دەستکرد AI",
+          "evening": "-",
+          "parallel": "89.075",
+          "online": "91.8"
+        },
+        {
+          "department": "سیستەمی زانیاری",
+          "evening": "-",
+          "parallel": "89.833",
+          "online": "92.2"
+        },
+        {
+          "department": "زانیاری و پەیوەندی ICT",
+          "evening": "-",
+          "parallel": "88.552",
+          "online": "90.9"
+        }
+      ],
+      "کۆلێژی تەکنەلۆجیا": [
+        {
+          "department": "ئامێری بیناسازی",
+          "evening": "-",
+          "parallel": "64.6",
+          "online": "66.321"
+        },
+        {
+          "department": "تەکنەلۆجیای ئۆتۆمبێل",
+          "evening": "-",
+          "parallel": "65.699",
+          "online": "69.699"
+        },
+        {
+          "department": "پیشەسازی ئۆتۆماتیکی",
+          "evening": "-",
+          "parallel": "58.995",
+          "online": "60.931"
+        },
+        {
+          "department": "تەکنەلۆجیای نەوت - دیپلۆم",
+          "evening": "-",
+          "parallel": "57.6",
+          "online": "57.9"
+        },
+        {
+          "department": "بیناسازی ڕێگا و پرد - دیپلۆم",
+          "evening": "-",
+          "parallel": "57.199",
+          "online": "59.189"
+        },
+        {
+          "department": "کۆچبەری - دیپلۆم",
+          "evening": "-",
+          "parallel": "58.299",
+          "online": "58.227"
+        },
+        {
+          "department": "وزەی نوێبووەوە - دیپلۆم",
+          "evening": "-",
+          "parallel": "56.68",
+          "online": "59.5"
+        }
+      ],
+      "کۆلێژی تەکنیکی شەقڵاوە": [
+        {
+          "department": "پەرستاری - دیپلۆم",
+          "evening": "67.714",
+          "parallel": "74.286",
+          "online": "78.047"
+        },
+        {
+          "department": "شیکارییە نەخۆشەکان",
+          "evening": "67.714",
+          "parallel": "72.286",
+          "online": "74.745"
+        },
+        {
+          "department": "پزیشکی مەڵەکان",
+          "evening": "59.459",
+          "parallel": "61.726",
+          "online": "64.571"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "56.041",
+          "parallel": "57.89",
+          "online": "59.519"
+        },
+        {
+          "department": "تەکنەلۆجیای زانیاری IT - دیپلۆم",
+          "evening": "57.782",
+          "parallel": "62.102",
+          "online": "64.2"
+        },
+        {
+          "department": "ئامێری بیناسازی - دیپلۆم",
+          "evening": "53.929",
+          "parallel": "56.164",
+          "online": "58.7"
+        },
+        {
+          "department": "تەکنیکی تەلارسازی - دیپلۆم",
+          "evening": "55.068",
+          "parallel": "59.158",
+          "online": "58.23"
+        },
+        {
+          "department": "کوالیتی خواردنی - دیپلۆم",
+          "evening": "51.186",
+          "parallel": "53.641",
+          "online": "54.068"
+        },
+        {
+          "department": "دیپلۆماسی و پرۆتۆکۆڵ - دیپلۆم",
+          "evening": "53.083",
+          "parallel": "54.958",
+          "online": "55.643"
+        },
+        {
+          "department": "ڕێکخراوەکانی گەشتیاری - دیپلۆم",
+          "evening": "50.6",
+          "parallel": "51.334",
+          "online": "53.849"
+        }
+      ],
+      "کۆلێژی کارگێڕی تەکنیکی": [
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "-",
+          "parallel": "64.64",
+          "online": "67.1"
+        },
+        {
+          "department": "ڕاگەیاندن",
+          "evening": "-",
+          "parallel": "58.379",
+          "online": "64.807"
+        },
+        {
+          "department": "مارکێتینگی نێودەوڵەتی",
+          "evening": "57.021",
+          "parallel": "61.938",
+          "online": "65.96"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "-",
+          "parallel": "65.614",
+          "online": "68.3"
+        },
+        {
+          "department": "وەرگێڕان",
+          "evening": "-",
+          "parallel": "66.516",
+          "online": "68.6"
+        }
+      ],
+      "پەیمانگای پزیشکی هەولێر": [
+        {
+          "department": "دەرمانسازی",
+          "evening": "79.714",
+          "parallel": "83.143",
+          "online": "86.286"
+        },
+        {
+          "department": "پەرستاری",
+          "evening": "76.677",
+          "parallel": "81.143",
+          "online": "83.714"
+        },
+        {
+          "department": "شیکارییە نەخۆشەکان",
+          "evening": "70.566",
+          "parallel": "74.671",
+          "online": "77.143"
+        },
+        {
+          "department": "بێهۆشکردن",
+          "evening": "-",
+          "parallel": "78.286",
+          "online": "81.214"
+        },
+        {
+          "department": "یارمەتیدەری دەندانپزیشک",
+          "evening": "-",
+          "parallel": "72.936",
+          "online": "74.826"
+        },
+        {
+          "department": "ژنانەوەزایی و مامناوەند",
+          "evening": "67.429",
+          "parallel": "70.404",
+          "online": "75.628"
+        },
+        {
+          "department": "پەرستاری - جوانکاری",
+          "evening": "70.186",
+          "parallel": "74",
+          "online": "75.628"
+        }
+      ],
+      "پەیمانگای کارگێڕی تەکنیکی": [
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "57.844",
+          "parallel": "59.716",
+          "online": "61.701"
+        },
+        {
+          "department": "بەڕێوەبردنی یاسایی",
+          "evening": "56.534",
+          "parallel": "58.5",
+          "online": "59.807"
+        },
+        {
+          "department": "بەڕێوەبردنی مارکێتینگ",
+          "evening": "54.854",
+          "parallel": "56.4",
+          "online": "58.7"
+        },
+        {
+          "department": "بەڕێوەبردنی ڕێکخراوەکانی گەشتیاری",
+          "evening": "50.2",
+          "parallel": "53.025",
+          "online": "53.6"
+        },
+        {
+          "department": "بەڕێوەبردنی سیستەمی زانیاری",
+          "evening": "55.578",
+          "parallel": "57.911",
+          "online": "59.463"
+        },
+        {
+          "department": "بەڕێوەبردنی سەرچاوەی مرۆڤی",
+          "evening": "53.172",
+          "parallel": "54.581",
+          "online": "56.497"
+        },
+        {
+          "department": "تەکنیکی ڕاگەیاندن",
+          "evening": "53.554",
+          "parallel": "55.879",
+          "online": "58.454"
+        },
+        {
+          "department": "ڕێنمای گەشتیاری",
+          "evening": "53",
+          "parallel": "54.578",
+          "online": "55.691"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "58",
+          "parallel": "60.34",
+          "online": "62.8"
+        }
+      ],
+      "پەیمانگای تەکنیکی کۆیە": [
+        {
+          "department": "پەرستاری",
+          "evening": "68.857",
+          "parallel": "72.373",
+          "online": "75.608"
+        },
+        {
+          "department": "پەرستاری - تاق تاق",
+          "evening": "68.015",
+          "parallel": "70.255",
+          "online": "73.429"
+        },
+        {
+          "department": "شیکارییە نەخۆشەکان",
+          "evening": "64.51",
+          "parallel": "66.571",
+          "online": "69.143"
+        },
+        {
+          "department": "شیکارییە نەخۆشەکان - تاق تاق",
+          "evening": "63.714",
+          "parallel": "65.429",
+          "online": "66.571"
+        },
+        {
+          "department": "ژنانەوەزایی و مامناوەند",
+          "evening": "61.714",
+          "parallel": "63.143",
+          "online": "64.571"
+        },
+        {
+          "department": "تەکنەلۆجیای پێترۆکیمیا",
+          "evening": "51.35",
+          "parallel": "53.999",
+          "online": "57.5"
+        },
+        {
+          "department": "نەوت - هەڵکێشان و پاڵاوتن",
+          "evening": "51.168",
+          "parallel": "54.14",
+          "online": "59.697"
+        },
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "55.564",
+          "parallel": "58.247",
+          "online": "61.299"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "51.299",
+          "parallel": "54.125",
+          "online": "55.89"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار - تاق تاق",
+          "evening": "53.324",
+          "parallel": "53.015",
+          "online": "54.141"
+        },
+        {
+          "department": "بەڕێوەبردنی یاسایی",
+          "evening": "-",
+          "parallel": "54.217",
+          "online": "56.06"
+        },
+        {
+          "department": "بەڕێوەبردنی دامەزراوەکانی گەشتیاری",
+          "evening": "50",
+          "parallel": "51.655",
+          "online": "54.599"
+        }
+      ],
+      "کۆلێژی تەکنیکی سۆران": [
+        {
+          "department": "پەرستاری",
+          "evening": "68.857",
+          "parallel": "54.958",
+          "online": "80.026"
+        },
+        {
+          "department": "شیکارییە نەخۆشەکان - دیپلۆم",
+          "evening": "63.429",
+          "parallel": "66",
+          "online": "68.857"
+        },
+        {
+          "department": "ژنانەوەزایی و مامناوەند - دیپلۆم",
+          "evening": "60.571",
+          "parallel": "62.049",
+          "online": "63.91"
+        },
+        {
+          "department": "تەکنەلۆجیای زانیاری IT - دیپلۆم",
+          "evening": "55.833",
+          "parallel": "57.499",
+          "online": "59.499"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "52.949",
+          "parallel": "54.47",
+          "online": "57.976"
+        },
+        {
+          "department": "ژمێریاری - دیپلۆم",
+          "evening": "50.928",
+          "parallel": "54.385",
+          "online": "58.399"
+        }
+      ],
+      "پەیمانگای تەکنیکی مێرگەسوور": [
+        {
+          "department": "پەرستاری",
+          "evening": "-",
+          "parallel": "68.571",
+          "online": "71.69"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "50.2",
+          "parallel": "51.216",
+          "online": "54.449"
+        },
+        {
+          "department": "پەروەردەی ژووکان",
+          "evening": "-",
+          "parallel": "50",
+          "online": "55"
+        },
+        {
+          "department": "ڕووەکە پزیشکییەکان",
+          "evening": "-",
+          "parallel": "55.108",
+          "online": "53.758"
+        }
+      ],
+      "پەیمانگای تەکنیکی چۆمان": [
+        {
+          "department": "تەکنیکی تەلارسازی",
+          "evening": "51.197",
+          "parallel": "57.77",
+          "online": "60.45"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "51.799",
+          "parallel": "50.726",
+          "online": "54.799"
+        },
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "50.524",
+          "parallel": "57.1",
+          "online": "57.917"
+        },
+        {
+          "department": "بەڕێوەبردنی دارایی",
+          "evening": "52.697",
+          "parallel": "51.787",
+          "online": "55.302"
+        }
+      ],
+      "پەیمانگای تەکنیکی خەبات": [
+        {
+          "department": "بەڕێوەبردنی یاسایی",
+          "evening": "50.399",
+          "parallel": "54.042",
+          "online": "55.285"
+        },
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "-",
+          "parallel": "58.966",
+          "online": "57.2"
+        },
+        {
+          "department": "بەڕێوەبردنی دامەزراوەکانی بازرگانی",
+          "evening": "51.286",
+          "parallel": "53.659",
+          "online": "54.125"
+        },
+        {
+          "department": "تەندروستی کۆمەڵگا",
+          "evening": "-",
+          "parallel": "62.738",
+          "online": "63.291"
+        },
+        {
+          "department": "تەکنیکی کشتوکاڵی ئاوی",
+          "evening": "-",
+          "parallel": "54.8",
+          "online": "60"
+        },
+        {
+          "department": "ئەمنی خواردنی و کوالیتی",
+          "evening": "-",
+          "parallel": "51.688",
+          "online": "53.89"
+        },
+        {
+          "department": "بەرهەمهێنانی ماسی",
+          "evening": "-",
+          "parallel": "52.089",
+          "online": "54.9"
+        }
+      ]
+    },
+    "زانکۆکانی کوردستان - بە پارە": {
+      "کۆلێژی پزیشکی": [
+        {
+          "department": "پزیشکی گشتی",
+          "evening": "-",
+          "parallel": "-",
+          "online": "90"
+        },
+        {
+          "department": "پزیشکی دەندان",
+          "evening": "-",
+          "parallel": "-",
+          "online": "85"
+        },
+        {
+          "department": "دەرمانسازی",
+          "evening": "-",
+          "parallel": "-",
+          "online": "85"
+        }
+      ],
+      "کۆلێژی ئەندازیاری و زانست": [
+        {
+          "department": "ئەندازیاری کۆمپیوتەر",
+          "evening": "-",
+          "parallel": "-",
+          "online": "60"
+        },
+        {
+          "department": "ئەندازیاری نەرمەکاڵا",
+          "evening": "-",
+          "parallel": "-",
+          "online": "75"
+        },
+        {
+          "department": "ئەندازیاری نەوت",
+          "evening": "-",
+          "parallel": "-",
+          "online": "75"
+        },
+        {
+          "department": "ئەندازیاری شارستانی",
+          "evening": "-",
+          "parallel": "-",
+          "online": "70"
+        },
+        {
+          "department": "زیرەکی دەستکرد",
+          "evening": "-",
+          "parallel": "-",
+          "online": "80"
+        },
+        {
+          "department": "زانستی کۆمپیوتەر",
+          "evening": "-",
+          "parallel": "-",
+          "online": "60"
+        },
+        {
+          "department": "ئەمنی سایبەری",
+          "evening": "-",
+          "parallel": "-",
+          "online": "60"
+        },
+        {
+          "department": "دیزاینی ناوەوە",
+          "evening": "-",
+          "parallel": "-",
+          "online": "70"
+        }
+      ],
+      "کۆلێژی زانستە کۆمەڵایەتییەکان": [
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "-",
+          "parallel": "-",
+          "online": "60"
+        },
+        {
+          "department": "مارکێتینگی دیجیتاڵ",
+          "evening": "-",
+          "parallel": "-",
+          "online": "60"
+        },
+        {
+          "department": "پەیوەندییە نێودەوڵەتییەکان",
+          "evening": "-",
+          "parallel": "-",
+          "online": "60"
+        }
+      ],
+      "کۆلێژی یاسا": [
+        {
+          "department": "یاسا",
+          "evening": "-",
+          "parallel": "-",
+          "online": "70"
+        }
+      ],
+      "کۆلێژی کارگێڕی و ئابووری": [
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "-",
+          "parallel": "-",
+          "online": "65"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "-",
+          "parallel": "-",
+          "online": "65"
+        },
+        {
+          "department": "ئابووری",
+          "evening": "-",
+          "parallel": "-",
+          "online": "65"
+        },
+        {
+          "department": "دارایی",
+          "evening": "-",
+          "parallel": "-",
+          "online": "65"
+        }
+      ]
+    },
+    "زانکۆی کۆیە": {
+      "کۆلێژی پزیشکی": [
+        {
+          "department": "پزیشکی گشتی",
+          "evening": "-",
+          "parallel": "96.903",
+          "online": "97.41"
+        }
+      ],
+      "کۆلێژی ئەندازیاری": [
+        {
+          "department": "ئەندازیاری تەلارسازی",
+          "evening": "-",
+          "parallel": "94.189",
+          "online": "94.84"
+        },
+        {
+          "department": "ئەندازیاری نەرمەکاڵا",
+          "evening": "",
+          "parallel": "94.156",
+          "online": "94.76"
+        },
+        {
+          "department": "ئەندازیاری شارستانی",
+          "evening": "-",
+          "parallel": "89.9",
+          "online": "91.669"
+        },
+        {
+          "department": "ئەندازیاری نەوت",
+          "evening": "-",
+          "parallel": "78.653",
+          "online": "82.856"
+        },
+        {
+          "department": "ئەندازیاری کیمیایی",
+          "evening": "-",
+          "parallel": "75.835",
+          "online": "79"
+        },
+        {
+          "department": "جیۆتەکنیک",
+          "evening": "-",
+          "parallel": "75",
+          "online": "76.833"
+        },
+        {
+          "department": "ئەندازیاری مەکانیک",
+          "evening": "-",
+          "parallel": "76.466",
+          "online": "78.733"
+        }
+      ],
+      "کۆلێژی زانست و تەندروستی": [
+        {
+          "department": "مایکرۆبایۆلۆجی پزیشکی",
+          "evening": "-",
+          "parallel": "89.6",
+          "online": "92"
+        },
+        {
+          "department": "بایۆلۆجی",
+          "evening": "-",
+          "parallel": "80.383",
+          "online": "83.797"
+        },
+        {
+          "department": "شیخانەی پزیشکی",
+          "evening": "-",
+          "parallel": "82.681",
+          "online": "88.8"
+        },
+        {
+          "department": "کیمیا",
+          "evening": "-",
+          "parallel": "73.474",
+          "online": "77.06"
+        },
+        {
+          "department": "زانستی کۆمپیوتەر CS",
+          "evening": "-",
+          "parallel": "80.099",
+          "online": "82.4"
+        },
+        {
+          "department": "دەروونناسی کلینیکی",
+          "evening": "-",
+          "parallel": "64.581",
+          "online": "69.667"
+        },
+        {
+          "department": "فیزیا",
+          "evening": "-",
+          "parallel": "60.9",
+          "online": "62.097"
+        },
+        {
+          "department": "بیرکاری",
+          "evening": "-",
+          "parallel": "58.47",
+          "online": "62.825"
+        }
+      ],
+      "کۆلێژی زانستە مرۆڤایەتییەکان": [
+        {
+          "department": "یاسا",
+          "evening": "-",
+          "parallel": "75.048",
+          "online": "77.598"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "57.699",
+          "parallel": "65.972",
+          "online": "70.192"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "54.999",
+          "parallel": "58.594",
+          "online": "61"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "-",
+          "parallel": "58.828",
+          "online": "63.413"
+        }
+      ],
+      "کۆلێژی پەروەردە": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "53.765",
+          "parallel": "57.699",
+          "online": "58.229"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "62.021",
+          "parallel": "69.453",
+          "online": "72.807"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "53.6",
+          "parallel": "58.999",
+          "online": "61.699"
+        },
+        {
+          "department": "مێژوو",
+          "evening": "51.2",
+          "parallel": "54.4",
+          "online": "59.238"
+        },
+        {
+          "department": "جوگرافیا",
+          "evening": "51.297",
+          "parallel": "55.304",
+          "online": "61.6"
+        },
+        {
+          "department": "پەروەردەی ئایینی",
+          "evening": "59.2",
+          "parallel": "54.28",
+          "online": "58.5"
+        },
+        {
+          "department": "پەروەردە و دەروونناسی",
+          "evening": "50.799",
+          "parallel": "54.269",
+          "online": "59.326"
+        }
+      ]
+    },
+    "زانکۆی سۆران": {
+      "کۆلێژی ئەندازیاری": [
+        {
+          "department": "ئەندازیاری شارستانی",
+          "evening": "-",
+          "parallel": "88.199",
+          "online": "89.44"
+        },
+        {
+          "department": "ئەندازیاری شارستانی ژینگەیی",
+          "evening": "-",
+          "parallel": "77.686",
+          "online": "73.054"
+        },
+        {
+          "department": "ئەندازیاری کیمیایی",
+          "evening": "-",
+          "parallel": "74.254",
+          "online": "77.024"
+        },
+        {
+          "department": "ئەندازیاری نەوت",
+          "evening": "-",
+          "parallel": "76.56",
+          "online": "81.108"
+        },
+        {
+          "department": "ئەندازیاری مەکاترۆنیک و ڕۆبۆتیک",
+          "evening": "-",
+          "parallel": "75",
+          "online": "75.139"
+        }
+      ],
+      "کۆلێژی زانست": [
+        {
+          "department": "پەرستاری",
+          "evening": "-",
+          "parallel": "91",
+          "online": "93.143"
+        },
+        {
+          "department": "بایۆلۆجی",
+          "evening": "-",
+          "parallel": "78.066",
+          "online": "84.466"
+        },
+        {
+          "department": "کیمیا",
+          "evening": "-",
+          "parallel": "72.239",
+          "online": "78.36"
+        },
+        {
+          "department": "فیزیا",
+          "evening": "-",
+          "parallel": "63.499",
+          "online": "69.596"
+        },
+        {
+          "department": "زانستی کۆمپیوتەر CS",
+          "evening": "-",
+          "parallel": "77.442",
+          "online": "81.956"
+        },
+        {
+          "department": "جیۆلۆجی نەوت",
+          "evening": "-",
+          "parallel": "59.142",
+          "online": "64.439"
+        }
+      ],
+      "کۆلێژی ئاداب": [
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "59.799",
+          "parallel": "67.948",
+          "online": "72.7"
+        },
+        {
+          "department": "مێژوو",
+          "evening": "50.2",
+          "parallel": "56.3",
+          "online": "59.1"
+        },
+        {
+          "department": "جوگرافیا",
+          "evening": "53.2",
+          "parallel": "57.218",
+          "online": "59.1"
+        },
+        {
+          "department": "دەروونناسی",
+          "evening": "52.956",
+          "parallel": "55.4",
+          "online": "57.335"
+        },
+        {
+          "department": "کۆمەڵناسی",
+          "evening": "51.6",
+          "parallel": "55.4",
+          "online": "58.054"
+        }
+      ],
+      "کۆلێژی پەروەردەی بنەڕەت": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "56.799",
+          "parallel": "58.564",
+          "online": "61.904"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "63.899",
+          "parallel": "69.599",
+          "online": "74.846"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "-",
+          "parallel": "60.091",
+          "online": "66.099"
+        },
+        {
+          "department": "باخچەی مناڵان",
+          "evening": "-",
+          "parallel": "57.582",
+          "online": "58.442"
+        },
+        {
+          "department": "زانستی گشتی",
+          "evening": "54.049",
+          "parallel": "61.199",
+          "online": "67.079"
+        },
+        {
+          "department": "کۆمەڵناسی",
+          "evening": "55.649",
+          "parallel": "57.8",
+          "online": "60.899"
+        }
+      ],
+      "کۆلێژی یاسا و سیاسەت": [
+        {
+          "department": "یاسا",
+          "evening": "-",
+          "parallel": "74.299",
+          "online": "76.499"
+        },
+        {
+          "department": "سیاسی و دیپلۆماسی",
+          "evening": "-",
+          "parallel": "57.77",
+          "online": "63.2"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "55.8",
+          "parallel": "58.364",
+          "online": "59.1"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "56.345",
+          "parallel": "57.3",
+          "online": "61.325"
+        }
+      ]
+    }
+  },
+  "sul": {
+    "زانکۆی سلێمانی": {
+      "کۆلێژی پزیشکی": [
+        {
+          "department": "پزیشکی گشتی",
+          "evening": "-",
+          "parallel": "97.501",
+          "online": "98"
+        },
+        {
+          "department": "پزیشکی دەندان",
+          "evening": "-",
+          "parallel": "96.667",
+          "online": "97"
+        },
+        {
+          "department": "دەرمانسازی",
+          "evening": "-",
+          "parallel": "96.257",
+          "online": "96.4"
+        },
+        {
+          "department": "پزیشکی مەڵەکان",
+          "evening": "-",
+          "parallel": "88.835",
+          "online": "91.59"
+        },
+        {
+          "department": "پەرستاری",
+          "evening": "-",
+          "parallel": "91.2",
+          "online": "94.912"
+        }
+      ],
+      "کۆلێژی ئەندازیاری": [
+        {
+          "department": "ئەندازیاری تەلارسازی",
+          "evening": "-",
+          "parallel": "95.6",
+          "online": "95.766"
+        },
+        {
+          "department": "ئەندازیاری شارستانی",
+          "evening": "-",
+          "parallel": "92.066",
+          "online": "93.506"
+        },
+        {
+          "department": "ئەندازیاری کارەبا",
+          "evening": "-",
+          "parallel": "87.72",
+          "online": "90.399"
+        },
+        {
+          "department": "سەرچاوەکانی ئاو",
+          "evening": "-",
+          "parallel": "76.2",
+          "online": "80.12"
+        },
+        {
+          "department": "ئەندازیاری کۆمپیوتەر",
+          "evening": "-",
+          "parallel": "93.999",
+          "online": "94.933"
+        }
+      ],
+      "کۆلێژی زانست": [
+        {
+          "department": "بایۆلۆجی",
+          "evening": "-",
+          "parallel": "90.3",
+          "online": "91.9"
+        },
+        {
+          "department": "کیمیا",
+          "evening": "-",
+          "parallel": "86.433",
+          "online": "88.233"
+        },
+        {
+          "department": "فیزیا",
+          "evening": "-",
+          "parallel": "63.799",
+          "online": "69"
+        },
+        {
+          "department": "بیرکاری",
+          "evening": "-",
+          "parallel": "60.499",
+          "online": "63.8"
+        },
+        {
+          "department": "نەوت و زەوی",
+          "evening": "-",
+          "parallel": "60.4",
+          "online": "63.6"
+        },
+        {
+          "department": "زانستی کۆمپیوتەر CS",
+          "evening": "-",
+          "parallel": "84.66",
+          "online": "88.333"
+        }
+      ],
+      "کۆلێژی زمانەکان": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "-",
+          "parallel": "59.2",
+          "online": "61.1"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "73.3",
+          "parallel": "80.899",
+          "online": "83.9"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "-",
+          "parallel": "61.793",
+          "online": "66.7"
+        },
+        {
+          "department": "زمانی فارسی",
+          "evening": "-",
+          "parallel": "53.787",
+          "online": "57.5"
+        },
+        {
+          "department": "وەرگێڕان",
+          "evening": "-",
+          "parallel": "74",
+          "online": "77"
+        }
+      ],
+      "کۆلێژی یاسا": [
+        {
+          "department": "یاسا",
+          "evening": "-",
+          "parallel": "85.399",
+          "online": "87.999"
+        }
+      ],
+      "کۆلێژی زانستە ئیسلامییەکان": [
+        {
+          "department": "بنەماکانی ئەدیان",
+          "evening": "-",
+          "parallel": "56.583",
+          "online": "60.299"
+        },
+        {
+          "department": "پەروەردەی ئایینی",
+          "evening": "54.959",
+          "parallel": "55.211",
+          "online": "59.827"
+        },
+        {
+          "department": "شەریعەت",
+          "evening": "-",
+          "parallel": "53.828",
+          "online": "58.187"
+        },
+        {
+          "department": "خوتبەخوێندن و ڕاگەیاندنی ئایینی",
+          "evening": "58.602",
+          "parallel": "55.114",
+          "online": "61.542"
+        },
+        {
+          "department": "لێکۆڵینەوەی ئیسلامی",
+          "evening": "-",
+          "parallel": "54.334",
+          "online": "60.19"
+        }
+      ],
+      "کۆلێژی زانستەکانی ژینگە - شارباژێڕ": [
+        {
+          "department": "زانستی ژینگە",
+          "evening": "-",
+          "parallel": "61.366",
+          "online": "67.794"
+        },
+        {
+          "department": "بەڕێوەبردنی ژینگە",
+          "evening": "-",
+          "parallel": "54.884",
+          "online": "60.039"
+        }
+      ],
+      "کۆلێژی ئاسایشی نیشتمانی": [
+        {
+          "department": "ئەمنی ئەلیکترۆنی",
+          "evening": "-",
+          "parallel": "-",
+          "online": "-"
+        },
+        {
+          "department": "لێکۆڵینەوەی ئەمنی",
+          "evening": "-",
+          "parallel": "-",
+          "online": "-"
+        },
+        {
+          "department": "لێکۆڵینەوەی ئیستیخباراتی",
+          "evening": "-",
+          "parallel": "-",
+          "online": "-"
+        }
+      ],
+      "کۆلێژی سیاسەت": [
+        {
+          "department": "زانستی سیاسی",
+          "evening": "-",
+          "parallel": "58.499",
+          "online": "64.823"
+        },
+        {
+          "department": "سیاسەت و پەیوەندییە نێودەوڵەتییەکان",
+          "evening": "-",
+          "parallel": "61.861",
+          "online": "63.4"
+        }
+      ],
+      "کۆلێژی پەروەردە": [
+        {
+          "department": "بایۆلۆجی",
+          "evening": "-",
+          "parallel": "75.2",
+          "online": "79.515"
+        },
+        {
+          "department": "کیمیا",
+          "evening": "-",
+          "parallel": "71.327",
+          "online": "75.561"
+        },
+        {
+          "department": "فیزیا",
+          "evening": "-",
+          "parallel": "65.499",
+          "online": "70.299"
+        },
+        {
+          "department": "بیرکاری",
+          "evening": "-",
+          "parallel": "63.399",
+          "online": "68.399"
+        },
+        {
+          "department": "ڕێنمایی پەروەردەیی و دەروونی",
+          "evening": "-",
+          "parallel": "67.999",
+          "online": "71.399"
+        }
+      ],
+      "کۆلێژی پەروەردەی بنەڕەت": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "58.921",
+          "parallel": "64",
+          "online": "68.389"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "70.7",
+          "parallel": "76.599",
+          "online": "80"
+        },
+        {
+          "department": "بیرکاری",
+          "evening": "57.2",
+          "parallel": "62.593",
+          "online": "66.432"
+        },
+        {
+          "department": "زانستی کۆمەڵایەتی",
+          "evening": "54.954",
+          "parallel": "58.952",
+          "online": "62.099"
+        },
+        {
+          "department": "کۆمپیوتەر",
+          "evening": "62.4",
+          "parallel": "70",
+          "online": "72.2"
+        },
+        {
+          "department": "پەروەردەی تایبەت",
+          "evening": "55.6",
+          "parallel": "59.823",
+          "online": "65.399"
+        },
+        {
+          "department": "باخچەی مناڵان",
+          "evening": "56.2",
+          "parallel": "61",
+          "online": "65.6"
+        }
+      ],
+      "کۆلێژی زانستە مرۆڤایەتییەکان": [
+        {
+          "department": "مێژوو",
+          "evening": "54",
+          "parallel": "56.931",
+          "online": "61.542"
+        },
+        {
+          "department": "جوگرافیا",
+          "evening": "-",
+          "parallel": "57.1",
+          "online": "58.525"
+        },
+        {
+          "department": "شوێنەوار",
+          "evening": "-",
+          "parallel": "55.198",
+          "online": "59.138"
+        },
+        {
+          "department": "ڕاگەیاندن",
+          "evening": "-",
+          "parallel": "60.013",
+          "online": "61.094"
+        },
+        {
+          "department": "کۆمەڵناسی",
+          "evening": "-",
+          "parallel": "59.199",
+          "online": "61.023"
+        },
+        {
+          "department": "کاری کۆمەڵایەتی",
+          "evening": "-",
+          "parallel": "58.807",
+          "online": "61.618"
+        },
+        {
+          "department": "پەیوەندییە گشتییەکان",
+          "evening": "-",
+          "parallel": "58.799",
+          "online": "61.2"
+        },
+        {
+          "department": "فەلسەفە",
+          "evening": "-",
+          "parallel": "54.359",
+          "online": "58.799"
+        }
+      ],
+      "کۆلێژی کارگێڕی و ئابووری": [
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "-",
+          "parallel": "67.375",
+          "online": "72.5"
+        },
+        {
+          "department": "ئابووری",
+          "evening": "-",
+          "parallel": "61.084",
+          "online": "64.899"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "-",
+          "parallel": "67.099",
+          "online": "71"
+        },
+        {
+          "department": "ئامار و زانیاری",
+          "evening": "-",
+          "parallel": "58.099",
+          "online": "59.899"
+        },
+        {
+          "department": "بەڕێوەبردنی مارکێتینگ",
+          "evening": "-",
+          "parallel": "64.099",
+          "online": "66.8"
+        }
+      ],
+      "کۆلێژی بازرگانی": [
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "-",
+          "parallel": "77.599",
+          "online": "80.7"
+        },
+        {
+          "department": "بەڕێوەبردنی پرۆژە",
+          "evening": "59.3",
+          "parallel": "61.666",
+          "online": "65.74"
+        },
+        {
+          "department": "ژمێریاری دارایی",
+          "evening": "-",
+          "parallel": "63.362",
+          "online": "68.304"
+        },
+        {
+          "department": "زانستی دارایی",
+          "evening": "-",
+          "parallel": "61.9",
+          "online": "63.999"
+        },
+        {
+          "department": "گەشتیاری و گەشت",
+          "evening": "-",
+          "parallel": "59.1",
+          "online": "60.699"
+        }
+      ],
+      "کۆلێژی زانستە مرۆڤایەتییەکانی سەیدسادق": [
+        {
+          "department": "مێژوو",
+          "evening": "50",
+          "parallel": "53.715",
+          "online": "65.828"
+        },
+        {
+          "department": "جوگرافیا",
+          "evening": "51.684",
+          "parallel": "54.437",
+          "online": "60.865"
+        }
+      ],
+      "کۆلێژی ئەندازیاری کشتوکاڵی": [
+        {
+          "department": "باخچەوانی",
+          "evening": "-",
+          "parallel": "55.08",
+          "online": "60.744"
+        },
+        {
+          "department": "سامانی سروشتی",
+          "evening": "-",
+          "parallel": "54.3",
+          "online": "60.523"
+        },
+        {
+          "department": "زانستی ئاژەڵی",
+          "evening": "-",
+          "parallel": "54.443",
+          "online": "58.341"
+        },
+        {
+          "department": "زانستی خواردنەوە و کوالیتی",
+          "evening": "-",
+          "parallel": "56.699",
+          "online": "58.538"
+        },
+        {
+          "department": "بەڕێوەبردن و گەشەسەندنی کشتوکاڵی",
+          "evening": "-",
+          "parallel": "55.155",
+          "online": "59"
+        },
+        {
+          "department": "بایۆتەکنۆلۆجی و زانستی کشتوکاڵی",
+          "evening": "-",
+          "parallel": "56.273",
+          "online": "60.299"
+        }
+      ],
+      "کۆلێژی هونەرە جوانەکان": [
+        {
+          "department": "هونەری دیداری",
+          "evening": "-",
+          "parallel": "50",
+          "online": "56.343"
+        },
+        {
+          "department": "موسیقا",
+          "evening": "-",
+          "parallel": "50",
+          "online": "62.158"
+        },
+        {
+          "department": "دروستکردنی فیلم",
+          "evening": "-",
+          "parallel": "50",
+          "online": "67.257"
+        },
+        {
+          "department": "دیزاینی گرافیک",
+          "evening": "-",
+          "parallel": "50",
+          "online": "65.828"
+        }
+      ]
+    },
+    "زانکۆی پۆلیتەکنیکی سلێمانی": {
+      "کۆلێژی تەندروستی پزیشکی": [
+        {
+          "department": "بێهۆشکردن",
+          "evening": "-",
+          "parallel": "95.2",
+          "online": "95.667"
+        },
+        {
+          "department": "شیکارییە نەخۆشەکان",
+          "evening": "-",
+          "parallel": "91.429",
+          "online": "93.6"
+        },
+        {
+          "department": "پەرستاری",
+          "evening": "-",
+          "parallel": "90.956",
+          "online": "94.178"
+        }
+      ],
+      "کۆلێژی ئەندازیاری": [
+        {
+          "department": "ئەندازیاری پەیوەندی",
+          "evening": "-",
+          "parallel": "86.68",
+          "online": "89.487"
+        },
+        {
+          "department": "مەکانیک و پیشەسازی",
+          "evening": "-",
+          "parallel": "84.68",
+          "online": "87.799"
+        },
+        {
+          "department": "نەوت و وزە",
+          "evening": "-",
+          "parallel": "81.126",
+          "online": "84.72"
+        },
+        {
+          "department": "وزە و کۆنترۆڵ",
+          "evening": "-",
+          "parallel": "81.04",
+          "online": "84"
+        },
+        {
+          "department": "ئەندازیاری پلاندانانی شارستانی",
+          "evening": "-",
+          "parallel": "80.818",
+          "online": "83.44"
+        }
+      ],
+      "کۆلێژی کارگێڕی": [
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "-",
+          "parallel": "63.56",
+          "online": "67.247"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "-",
+          "parallel": "63.4",
+          "online": "66.7"
+        },
+        {
+          "department": "ڕاگەیاندن",
+          "evening": "-",
+          "parallel": "57.4",
+          "online": "63.2"
+        },
+        {
+          "department": "پەیوەندییە گشتییەکان و مارکێتینگ",
+          "evening": "-",
+          "parallel": "60.661",
+          "online": "64.017"
+        }
+      ],
+      "کۆلێژی زانیاری": [
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "-",
+          "parallel": "82.72",
+          "online": "86.799"
+        },
+        {
+          "department": "تەکنەلۆجیای بنکەی داتا",
+          "evening": "-",
+          "parallel": "78",
+          "online": "82.3"
+        },
+        {
+          "department": "تۆڕەکانی کۆمپیوتەر",
+          "evening": "-",
+          "parallel": "76.64",
+          "online": "80.08"
+        }
+      ],
+      "کۆلێژی تەکنیکی هەڵەبجە": [
+        {
+          "department": "شیخانەی پزیشکی",
+          "evening": "-",
+          "parallel": "82.571",
+          "online": "88.333"
+        },
+        {
+          "department": "ڕووەکە پزیشکییەکان",
+          "evening": "-",
+          "parallel": "54.8",
+          "online": "58.502"
+        },
+        {
+          "department": "خواردنەوە و کوالیتی",
+          "evening": "-",
+          "parallel": "54",
+          "online": "57.815"
+        }
+      ],
+      "پەیمانگای کۆمپیوتەری تەکنیکی": [
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "62.076",
+          "parallel": "65.918",
+          "online": "71.072"
+        },
+        {
+          "department": "سیستەمی بنکەی داتا",
+          "evening": "58.6",
+          "parallel": "63.1",
+          "online": "67.8"
+        },
+        {
+          "department": "تۆڕەکانی کۆمپیوتەر",
+          "evening": "58",
+          "parallel": "62.499",
+          "online": "66.699"
+        }
+      ],
+      "پەیمانگای تەکنیکی پزیشکی": [
+        {
+          "department": "دەرمانسازی",
+          "evening": "82.857",
+          "parallel": "87.143",
+          "online": "89.714"
+        },
+        {
+          "department": "پەرستاری",
+          "evening": "79.429",
+          "parallel": "82.571",
+          "online": "86.571"
+        },
+        {
+          "department": "بێهۆشکردن",
+          "evening": "-",
+          "parallel": "82",
+          "online": "85.143"
+        },
+        {
+          "department": "شیکارییە نەخۆشەکان",
+          "evening": "72.604",
+          "parallel": "76.852",
+          "online": "81.429"
+        },
+        {
+          "department": "پەرستاری - دەندان",
+          "evening": "-",
+          "parallel": "74.286",
+          "online": "78.028"
+        },
+        {
+          "department": "تیشک",
+          "evening": "-",
+          "parallel": "73.714",
+          "online": "77.429"
+        },
+        {
+          "department": "پەرستاری - ژن و مامناوەند",
+          "evening": "-",
+          "parallel": "71.219",
+          "online": "74"
+        },
+        {
+          "department": "تەندروستی گشتی",
+          "evening": "70.644",
+          "parallel": "72.857",
+          "online": "75.434"
+        },
+        {
+          "department": "پەرستاری - مناڵان",
+          "evening": "-",
+          "parallel": "72.571",
+          "online": "75.429"
+        }
+      ],
+      "پەیمانگای تەکنیکی": [
+        {
+          "department": "تەکنیکی ئەندازیاری تەلارسازی",
+          "evening": "-",
+          "parallel": "63.511",
+          "online": "68.9"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "58.578",
+          "parallel": "60.65",
+          "online": "62.845"
+        },
+        {
+          "department": "کۆچبەری",
+          "evening": "-",
+          "parallel": "58.8",
+          "online": "62.294"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "56.437",
+          "parallel": "59.1",
+          "online": "61.699"
+        },
+        {
+          "department": "ڕاگەیاندن",
+          "evening": "56.305",
+          "parallel": "58.4",
+          "online": "60.035"
+        },
+        {
+          "department": "تەکنیکی کارەبا",
+          "evening": "53.86",
+          "parallel": "57.433",
+          "online": "58.571"
+        },
+        {
+          "department": "مەکانیک",
+          "evening": "-",
+          "parallel": "58.3",
+          "online": "61.499"
+        }
+      ],
+      "پەیمانگای تەکنیکی هەڵەبجە": [
+        {
+          "department": "پەرستاری",
+          "evening": "72.571",
+          "parallel": "75.714",
+          "online": "81.143"
+        },
+        {
+          "department": "شیکارییە نەخۆشەکان",
+          "evening": "68.571",
+          "parallel": "71.429",
+          "online": "75.05"
+        },
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "54.746",
+          "parallel": "59.3",
+          "online": "63.939"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "-",
+          "parallel": "56.225",
+          "online": "58.596"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "50.954",
+          "parallel": "53.762",
+          "online": "58.099"
+        }
+      ],
+      "پەیمانگای تەکنیکی چەمچەماڵ": [
+        {
+          "department": "پەرستاری",
+          "evening": "76.571",
+          "parallel": "79.429",
+          "online": "82"
+        },
+        {
+          "department": "تەکنیکی پزیشکی ئەورژانسی",
+          "evening": "-",
+          "parallel": "71.143",
+          "online": "73.537"
+        },
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "55.7",
+          "parallel": "59.44",
+          "online": "62.8"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "52.759",
+          "parallel": "54.839",
+          "online": "57.9"
+        },
+        {
+          "department": "تەکنیکی کارەبا",
+          "evening": "51.662",
+          "parallel": "54.8",
+          "online": "60.082"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "51.199",
+          "parallel": "54.8",
+          "online": "58.1"
+        }
+      ],
+      "پەیمانگای تەکنیکی دەربەندیخان": [
+        {
+          "department": "پەرستاری",
+          "evening": "72.101",
+          "parallel": "74.286",
+          "online": "79.239"
+        },
+        {
+          "department": "شیکارییە نەخۆشەکان",
+          "evening": "68.571",
+          "parallel": "70.857",
+          "online": "73.429"
+        },
+        {
+          "department": "تەکنەلۆجیای ئۆتۆمبێل",
+          "evening": "52.158",
+          "parallel": "54.529",
+          "online": "59.3"
+        },
+        {
+          "department": "زانستی کۆمپیوتەر CS",
+          "evening": "51.399",
+          "parallel": "56.129",
+          "online": "60.599"
+        },
+        {
+          "department": "تەکنیکی کارەبا",
+          "evening": "53.299",
+          "parallel": "55",
+          "online": "58.933"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "50.853",
+          "parallel": "54.162",
+          "online": "57.087"
+        },
+        {
+          "department": "کۆچبەری",
+          "evening": "-",
+          "parallel": "54.938",
+          "online": "58.53"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "51.72",
+          "parallel": "54.065",
+          "online": "58.4"
+        }
+      ],
+      "پەیمانگای تەکنیکی بەکرەجۆ": [
+        {
+          "department": "تەکنیکی بیتەریناری",
+          "evening": "-",
+          "parallel": "64.286",
+          "online": "68.023"
+        },
+        {
+          "department": "دیزاینی باخچە",
+          "evening": "-",
+          "parallel": "52.568",
+          "online": "53.777"
+        },
+        {
+          "department": "زانستی ژووکان",
+          "evening": "-",
+          "parallel": "51.045",
+          "online": "54.5"
+        },
+        {
+          "department": "بەڕێوەبردنی ئەلیکترۆنی",
+          "evening": "-",
+          "parallel": "55.699",
+          "online": "57.751"
+        },
+        {
+          "department": "خواردنەوە و کۆنترۆڵی کوالیتی",
+          "evening": "-",
+          "parallel": "54.6",
+          "online": "56.999"
+        }
+      ],
+      "پەیمانگای تەکنیکی دوکان": [
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "54.48",
+          "parallel": "58.7",
+          "online": "63.058"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "52.413",
+          "parallel": "55.506",
+          "online": "58.419"
+        },
+        {
+          "department": "بەڕێوەبردنی بانک",
+          "evening": "50.2",
+          "parallel": "54.609",
+          "online": "57.17"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "50.468",
+          "parallel": "53.816",
+          "online": "57.926"
+        },
+        {
+          "department": "پەیوەندییە گشتییەکان و مارکێتینگ",
+          "evening": "51.511",
+          "parallel": "54",
+          "online": "56.438"
+        }
+      ]
+    },
+    "زانکۆی پۆلیتەکنیکی گەرمیان": {
+      "کۆلێژی تەکنیکی - کەلار": [
+        {
+          "department": "شیکارییە نەخۆشەکان",
+          "evening": "-",
+          "parallel": "83.753",
+          "online": "88.857"
+        },
+        {
+          "department": "ئەندازیاری کارەبا و کۆمپیوتەر",
+          "evening": "-",
+          "parallel": "75.763",
+          "online": "77.533"
+        },
+        {
+          "department": "تەکنیکی پەرستاری",
+          "evening": "-",
+          "parallel": "90",
+          "online": "91.714"
+        }
+      ],
+      "کۆلێژی تەکنیکی - کفری": [
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "-",
+          "parallel": "61.593",
+          "online": "64.573"
+        },
+        {
+          "department": "شیکاری خواردنی و تەندروستی",
+          "evening": "-",
+          "parallel": "57.1",
+          "online": "59.2"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "51.299",
+          "parallel": "55.566",
+          "online": "59.846"
+        }
+      ],
+      "کۆلێژی تەکنیکی - ڕزگاری": [
+        {
+          "department": "ژمێریاری",
+          "evening": "54.1",
+          "parallel": "60",
+          "online": "65"
+        },
+        {
+          "department": "ڕاگەیاندن",
+          "evening": "64.2",
+          "parallel": "60",
+          "online": "65"
+        }
+      ],
+      "پەیمانگای تەکنیکی - کەلار": [
+        {
+          "department": "پەرستاری",
+          "evening": "75.143",
+          "parallel": "76",
+          "online": "81.714"
+        },
+        {
+          "department": "تەکنیکی بیتەریناری",
+          "evening": "-",
+          "parallel": "60.175",
+          "online": "62.857"
+        },
+        {
+          "department": "کۆچبەری",
+          "evening": "51",
+          "parallel": "54.722",
+          "online": "58.9"
+        },
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "54.195",
+          "parallel": "58.167",
+          "online": "62"
+        },
+        {
+          "department": "تەکنەلۆجیای کارەبا",
+          "evening": "51.665",
+          "parallel": "54.451",
+          "online": "60.3"
+        },
+        {
+          "department": "بەڕێوەبردنی پرۆژە",
+          "evening": "59.35",
+          "parallel": "52.531",
+          "online": "54.316"
+        },
+        {
+          "department": "دیزاینی ناوەوە",
+          "evening": "50.599",
+          "parallel": "55.199",
+          "online": "59.999"
+        }
+      ],
+      "پەیمانگای تەکنیکی - کفری": [
+        {
+          "department": "شیخانەی پزیشکی",
+          "evening": "64.788",
+          "parallel": "67.714",
+          "online": "70"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "51.899",
+          "parallel": "55.099",
+          "online": "60.5"
+        }
+      ]
+    },
+    "زانکۆی ڕاپەڕین": {
+      "کۆلێژی پەرستاری": [
+        {
+          "department": "پەرستاری",
+          "evening": "-",
+          "parallel": "91",
+          "online": "93.333"
+        }
+      ],
+      "کۆلێژی ئەندازیاری": [
+        {
+          "department": "ئەندازیاری کۆمپیوتەر",
+          "evening": "-",
+          "parallel": "92.266",
+          "online": "94"
+        },
+        {
+          "department": "ئەندازیاری شارستانی",
+          "evening": "-",
+          "parallel": "85.889",
+          "online": "89.4"
+        }
+      ],
+      "کۆلێژی زانست": [
+        {
+          "department": "شیخانەی پزیشکی",
+          "evening": "-",
+          "parallel": "85.667",
+          "online": "90.703"
+        },
+        {
+          "department": "کیمیا",
+          "evening": "-",
+          "parallel": "77.736",
+          "online": "83.3"
+        },
+        {
+          "department": "بایۆلۆجی",
+          "evening": "-",
+          "parallel": "83.74",
+          "online": "87.947"
+        },
+        {
+          "department": "فیزیای گشتی",
+          "evening": "-",
+          "parallel": "59.3",
+          "online": "63.5"
+        }
+      ],
+      "کۆلێژی پەروەردەی بنەڕەت": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "53.8",
+          "parallel": "58.038",
+          "online": "61.037"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "60.917",
+          "parallel": "69.499",
+          "online": "73.82"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "53.771",
+          "parallel": "56.779",
+          "online": "60.899"
+        },
+        {
+          "department": "بیرکاری",
+          "evening": "53.8",
+          "parallel": "59.724",
+          "online": "63.5"
+        },
+        {
+          "department": "باخچەی مناڵان",
+          "evening": "-",
+          "parallel": "58.179",
+          "online": "63.159"
+        }
+      ],
+      "کۆلێژی پەروەردەی قەڵادزێ": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "53.941",
+          "parallel": "54.654",
+          "online": "57.999"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "58.3",
+          "parallel": "69.506",
+          "online": "73.799"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "55.05",
+          "parallel": "55.4",
+          "online": "57.073"
+        },
+        {
+          "department": "پەروەردە و دەروونناسی",
+          "evening": "50.772",
+          "parallel": "53.771",
+          "online": "58.814"
+        }
+      ],
+      "کۆلێژی یاسا": [
+        {
+          "department": "یاسا",
+          "evening": "-",
+          "parallel": "76.199",
+          "online": "79.8"
+        }
+      ],
+      "کۆلێژی خوێندنی ئیسلامی": [
+        {
+          "department": "زانستی ئیسلامی",
+          "evening": "58.299",
+          "parallel": "62",
+          "online": "59.392"
+        }
+      ],
+      "کۆلێژی زانستە مرۆڤایەتییەکان": [
+        {
+          "department": "جوگرافیا",
+          "evening": "51.662",
+          "parallel": "55.63",
+          "online": "61.998"
+        }
+      ],
+      "کۆلێژی کارگێڕی و دارایی": [
+        {
+          "department": "بەڕێوەبردنی کارووبار - بە ئینگلیزی",
+          "evening": "56.4",
+          "parallel": "59.841",
+          "online": "66"
+        },
+        {
+          "department": "بەڕێوەبردنی بیمە",
+          "evening": "51.707",
+          "parallel": "57.499",
+          "online": "59.1"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "54.205",
+          "parallel": "58.878",
+          "online": "62.935"
+        }
+      ],
+      "کۆلێژی ئەندازیاری کشتوکاڵی": [
+        {
+          "department": "سامانی ئاژەڵی",
+          "evening": "",
+          "parallel": "57",
+          "online": "61.6"
+        },
+        {
+          "department": "بەرهەمهێنانی ڕووەکە پزیشکییەکان",
+          "evening": "",
+          "parallel": "54.603",
+          "online": "59.7"
+        },
+        {
+          "department": "باخچەوانی",
+          "evening": "",
+          "parallel": "57.842",
+          "online": "63.4"
+        }
+      ]
+    },
+    "زانکۆی گەرمیان": {
+      "کۆلێژی پزیشکی": [
+        {
+          "department": "پزیشکی گشتی",
+          "evening": "-",
+          "parallel": "97.007",
+          "online": "97.333"
+        }
+      ],
+      "کۆلێژی ئەندازیاری": [
+        {
+          "department": "ئەندازیاری تەلارسازی",
+          "evening": "-",
+          "parallel": "93.717",
+          "online": "94.28"
+        },
+        {
+          "department": "ئەندازیاری شارستانی",
+          "evening": "-",
+          "parallel": "82.96",
+          "online": "87.266"
+        },
+        {
+          "department": "پلاندانانی شارستانی",
+          "evening": "-",
+          "parallel": "54.8",
+          "online": "59.599"
+        }
+      ],
+      "کۆلێژی سیاسەت": [
+        {
+          "department": "سیاسەتی گشتی",
+          "evening": "-",
+          "parallel": "57.797",
+          "online": "60.5"
+        }
+      ],
+      "کۆلێژی زانست": [
+        {
+          "department": "کیمیا",
+          "evening": "-",
+          "parallel": "71.233",
+          "online": "77.066"
+        },
+        {
+          "department": "زانستی کۆمپیوتەر CS",
+          "evening": "-",
+          "parallel": "68.633",
+          "online": "73.66"
+        },
+        {
+          "department": "زانستی خواردنەوە",
+          "evening": "-",
+          "parallel": "62",
+          "online": "66.333"
+        }
+      ],
+      "کۆلێژی پەروەردە": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "-",
+          "parallel": "56.5",
+          "online": "57.6"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "59.05",
+          "parallel": "69.417",
+          "online": "72.4"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "-",
+          "parallel": "57.799",
+          "online": "64"
+        },
+        {
+          "department": "بایۆلۆجی",
+          "evening": "-",
+          "parallel": "64.047",
+          "online": "69.851"
+        },
+        {
+          "department": "کیمیا",
+          "evening": "-",
+          "parallel": "59.2",
+          "online": "64.599"
+        },
+        {
+          "department": "فیزیا",
+          "evening": "-",
+          "parallel": "59.651",
+          "online": "64.618"
+        },
+        {
+          "department": "بیرکاری",
+          "evening": "-",
+          "parallel": "60.521",
+          "online": "63.9"
+        },
+        {
+          "department": "مێژوو",
+          "evening": "50.777",
+          "parallel": "61.772",
+          "online": "68.2"
+        },
+        {
+          "department": "جوگرافیا",
+          "evening": "-",
+          "parallel": "54.84",
+          "online": "58.6"
+        },
+        {
+          "department": "دەروونناسی",
+          "evening": "50.799",
+          "parallel": "54.51",
+          "online": "58.6"
+        }
+      ],
+      "کۆلێژی پەروەردەی بنەڕەت": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "56.464",
+          "parallel": "53.785",
+          "online": "58.269"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "56.2",
+          "parallel": "55.262",
+          "online": "58.299"
+        },
+        {
+          "department": "زانستی کۆمەڵایەتی",
+          "evening": "52.473",
+          "parallel": "55",
+          "online": "60"
+        },
+        {
+          "department": "زانستی گشتی",
+          "evening": "52.473",
+          "parallel": "64.72",
+          "online": "64.2"
+        },
+        {
+          "department": "باخچەی مناڵان",
+          "evening": "50.971",
+          "parallel": "56.199",
+          "online": "59"
+        }
+      ],
+      "کۆلێژی یاسا": [
+        {
+          "department": "یاسا",
+          "evening": "-",
+          "parallel": "75.894",
+          "online": "77.799"
+        }
+      ],
+      "کۆلێژی تەکنەلۆجیای خانەقین": [
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "-",
+          "parallel": "58.7",
+          "online": "63.3"
+        },
+        {
+          "department": "تۆڕەکانی کۆمپیوتەر",
+          "evening": "-",
+          "parallel": "-",
+          "online": "64.28"
+        }
+      ],
+      "کۆلێژی زانستە مرۆڤایەتییەکانی خانەقین": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "55",
+          "parallel": "54.674",
+          "online": "60"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "58.599",
+          "parallel": "59.156",
+          "online": "64.56"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "55",
+          "parallel": "59.969",
+          "online": "61.067"
+        },
+        {
+          "department": "جوگرافیا",
+          "evening": "-",
+          "parallel": "55",
+          "online": "60"
+        },
+        {
+          "department": "مێژوو",
+          "evening": "50",
+          "parallel": "59.484",
+          "online": "60"
+        },
+        {
+          "department": "دەروونناسی",
+          "evening": "55.023",
+          "parallel": "55.523",
+          "online": "60.969"
+        }
+      ]
+    },
+    "زانکۆی چەرموو": {
+      "کۆلێژی ئەندازیاری": [
+        {
+          "department": "ئەندازیاری نەرمەکاڵا",
+          "evening": "-",
+          "parallel": "91.4",
+          "online": "93.166"
+        }
+      ],
+      "کۆلێژی زانست": [
+        {
+          "department": "شیکارییە نەخۆشەکان",
+          "evening": "-",
+          "parallel": "82.667",
+          "online": "88.586"
+        },
+        {
+          "department": "زانستی کیمیا",
+          "evening": "-",
+          "parallel": "72.6",
+          "online": "77.86"
+        },
+        {
+          "department": "زانستی کۆمپیوتەر CS",
+          "evening": "-",
+          "parallel": "70.433",
+          "online": "75.4"
+        },
+        {
+          "department": "زانستی فیزیا",
+          "evening": "-",
+          "parallel": "58.4",
+          "online": "64.828"
+        }
+      ],
+      "کۆلێژی پەروەردە": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "53.829",
+          "parallel": "55.199",
+          "online": "58.4"
+        },
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "64.2",
+          "parallel": "71.399",
+          "online": "74.199"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "53.999",
+          "parallel": "58.005",
+          "online": "62.699"
+        },
+        {
+          "department": "زانستی گشتی",
+          "evening": "-",
+          "parallel": "58.782",
+          "online": "63.11"
+        },
+        {
+          "department": "پەروەردەی تایبەت",
+          "evening": "51.604",
+          "parallel": "54.713",
+          "online": "58.33"
+        }
+      ],
+      "کۆلێژی کارگێڕی و ئابووری": [
+        {
+          "department": "بەڕێوەبردنی نەوت و وزە",
+          "evening": "-",
+          "parallel": "59.9",
+          "online": "63.714"
+        }
+      ],
+      "کۆلێژی کار": [
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "54.863",
+          "parallel": "55.889",
+          "online": "58.157"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "-",
+          "parallel": "58.49",
+          "online": "62.6"
+        }
+      ]
+    }
+  },
+  "duhok": {
+    "زانکۆی دهۆک": {
+      "کۆلێژی پزیشکی": [
+        {
+          "department": "پزیشکی گشتی",
+          "evening": "-",
+          "parallel": "96.333",
+          "online": "97.2"
+        },
+        {
+          "department": "پزیشکی دەندان",
+          "evening": "-",
+          "parallel": "95.429",
+          "online": "95.667"
+        },
+        {
+          "department": "دەرمانسازی",
+          "evening": "-",
+          "parallel": "94.857",
+          "online": "95.2"
+        },
+        {
+          "department": "پزیشکی مەڵەکان",
+          "evening": "-",
+          "parallel": "78.4",
+          "online": "81.667"
+        },
+        {
+          "department": "پەرستاری",
+          "evening": "-",
+          "parallel": "92.818",
+          "online": "93.714"
+        }
+      ],
+      "کۆلێژی ئەندازیاری": [
+        {
+          "department": "ئەندازیاری تەلارسازی",
+          "evening": "-",
+          "parallel": "94.48",
+          "online": "94.599"
+        },
+        {
+          "department": "ئەندازیاری شارستانی",
+          "evening": "-",
+          "parallel": "91.939",
+          "online": "93.3"
+        },
+        {
+          "department": "کارەبا و کۆمپیوتەر",
+          "evening": "-",
+          "parallel": "89.233",
+          "online": "91.356"
+        },
+        {
+          "department": "بایۆمیدیکاڵ",
+          "evening": "-",
+          "parallel": "-",
+          "online": "81.48"
+        },
+        {
+          "department": "ئەندازیاری مەکانیک",
+          "evening": "-",
+          "parallel": "82.24",
+          "online": "87.16"
+        }
+      ],
+      "کۆلێژی زانستە تەندروستییەکان": [
+        {
+          "department": "بێهۆشکردن",
+          "evening": "-",
+          "parallel": "94",
+          "online": "94.702"
+        },
+        {
+          "department": "زانستی خواردنەوە و پەرهیزکاری",
+          "evening": "-",
+          "parallel": "78.436",
+          "online": "83.348"
+        },
+        {
+          "department": "شیخانەی پزیشکی",
+          "evening": "-",
+          "parallel": "93",
+          "online": "93.667"
+        }
+      ],
+      "کۆلێژی پلاندانانی شارستانی": [
+        {
+          "department": "پلاندانانی شارستانی",
+          "evening": "-",
+          "parallel": "68.118",
+          "online": "73.2"
+        },
+        {
+          "department": "پلاندانانی شوێنایەتی",
+          "evening": "-",
+          "parallel": "-",
+          "online": "-"
+        }
+      ],
+      "کۆلێژی زانست": [
+        {
+          "department": "بایۆلۆجی",
+          "evening": "-",
+          "parallel": "82.66",
+          "online": "87.955"
+        },
+        {
+          "department": "کیمیا",
+          "evening": "-",
+          "parallel": "79.54",
+          "online": "84.18"
+        },
+        {
+          "department": "زانستی کۆمپیوتەر CS",
+          "evening": "-",
+          "parallel": "75.5",
+          "online": "79.999"
+        },
+        {
+          "department": "فیزیا",
+          "evening": "-",
+          "parallel": "70.399",
+          "online": "75.79"
+        },
+        {
+          "department": "بیرکاری",
+          "evening": "-",
+          "parallel": "65.788",
+          "online": "71.813"
+        },
+        {
+          "department": "جیۆلۆجی",
+          "evening": "-",
+          "parallel": "62.2",
+          "online": "65.5"
+        }
+      ],
+      "کۆلێژی زمانەکان": [
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "-",
+          "parallel": "72.5",
+          "online": "77.1"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "-",
+          "parallel": "65.687",
+          "online": "70.499"
+        },
+        {
+          "department": "زمانی فارسی",
+          "evening": "-",
+          "parallel": "57.658",
+          "online": "57.347"
+        },
+        {
+          "department": "وەرگێڕان",
+          "evening": "-",
+          "parallel": "71.199",
+          "online": "75.2"
+        },
+        {
+          "department": "زمانی کوردی",
+          "evening": "-",
+          "parallel": "61.406",
+          "online": "65.705"
+        }
+      ],
+      "کۆلێژی پەروەردە": [
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "-",
+          "parallel": "72.2",
+          "online": "78.2"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "-",
+          "parallel": "68.272",
+          "online": "73.299"
+        },
+        {
+          "department": "جوگرافیا",
+          "evening": "-",
+          "parallel": "65.671",
+          "online": "72.099"
+        },
+        {
+          "department": "زمانی سریانی",
+          "evening": "-",
+          "parallel": "55.4",
+          "online": "53.99"
+        },
+        {
+          "department": "مێژوو",
+          "evening": "-",
+          "parallel": "64.399",
+          "online": "70.1"
+        },
+        {
+          "department": "بیرکاری",
+          "evening": "-",
+          "parallel": "66",
+          "online": "71.099"
+        },
+        {
+          "department": "زمانی کوردی",
+          "evening": "-",
+          "parallel": "62.553",
+          "online": "68.8"
+        },
+        {
+          "department": "پەروەردەی ئایینی",
+          "evening": "-",
+          "parallel": "61.367",
+          "online": "64.7"
+        },
+        {
+          "department": "ڕێنمایی پەروەردەیی",
+          "evening": "-",
+          "parallel": "61.588",
+          "online": "65.2"
+        },
+        {
+          "department": "پەروەردەی تایبەت",
+          "evening": "-",
+          "parallel": "62.599",
+          "online": "66.427"
+        }
+      ],
+      "کۆلێژی یاسا": [
+        {
+          "department": "یاسا",
+          "evening": "-",
+          "parallel": "80.599",
+          "online": "84.6"
+        }
+      ],
+      "کۆلێژی زانستە سیاسییەکان": [
+        {
+          "department": "پەیوەندییە نێودەوڵەتییەکان و دیپلۆماسی",
+          "evening": "-",
+          "parallel": "68",
+          "online": "71.399"
+        },
+        {
+          "department": "سیاسەتی گشتی",
+          "evening": "-",
+          "parallel": "65.065",
+          "online": "69.147"
+        }
+      ],
+      "کۆلێژی زانستە مرۆڤایەتییەکان": [
+        {
+          "department": "دەروونناسی",
+          "evening": "-",
+          "parallel": "65.417",
+          "online": "68.4"
+        },
+        {
+          "department": "جوگرافیا",
+          "evening": "-",
+          "parallel": "62.514",
+          "online": "66.499"
+        },
+        {
+          "department": "مێژوو",
+          "evening": "-",
+          "parallel": "62",
+          "online": "66.199"
+        },
+        {
+          "department": "مافەکانی مرۆڤ",
+          "evening": "-",
+          "parallel": "59.599",
+          "online": "61.939"
+        },
+        {
+          "department": "شوێنەوار",
+          "evening": "-",
+          "parallel": "59.9",
+          "online": "62.1"
+        },
+        {
+          "department": "کۆمەڵناسی",
+          "evening": "-",
+          "parallel": "60.2",
+          "online": "62.613"
+        }
+      ],
+      "کۆلێژی کارگێڕی و ئابووری": [
+        {
+          "department": "ئابووری",
+          "evening": "-",
+          "parallel": "64",
+          "online": "68.422"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "-",
+          "parallel": "62.231",
+          "online": "66.679"
+        },
+        {
+          "department": "ئامار",
+          "evening": "-",
+          "parallel": "59.816",
+          "online": "62.775"
+        },
+        {
+          "department": "ژمێریاری",
+          "evening": "-",
+          "parallel": "62.51",
+          "online": "67.21"
+        },
+        {
+          "department": "بەڕێوەبردنی مارکێتینگ",
+          "evening": "-",
+          "parallel": "61.078",
+          "online": "63.724"
+        },
+        {
+          "department": "زانستی دارایی",
+          "evening": "-",
+          "parallel": "60.097",
+          "online": "61.817"
+        }
+      ],
+      "کۆلێژی ئەندازیاری کشتوکاڵی": [
+        {
+          "department": "بەرهەمهێنانی ئاژەڵی",
+          "evening": "-",
+          "parallel": "58.378",
+          "online": "60.838"
+        },
+        {
+          "department": "دارستان",
+          "evening": "-",
+          "parallel": "56.5",
+          "online": "57.5"
+        },
+        {
+          "department": "گەشتیاری و ژینگە",
+          "evening": "-",
+          "parallel": "55.737",
+          "online": "-"
+        },
+        {
+          "department": "پاراستنی ڕووەک",
+          "evening": "-",
+          "parallel": "55.585",
+          "online": "59.2"
+        },
+        {
+          "department": "خاک و ئاو",
+          "evening": "-",
+          "parallel": "55.214",
+          "online": "59.229"
+        },
+        {
+          "department": "دەرامەتی گێلکەیی",
+          "evening": "-",
+          "parallel": "55.389",
+          "online": "59.25"
+        },
+        {
+          "department": "باخچەوانی",
+          "evening": "-",
+          "parallel": "55.044",
+          "online": "59.227"
+        },
+        {
+          "department": "شیرەتکاریا چاندنی",
+          "evening": "-",
+          "parallel": "54.949",
+          "online": "-"
+        },
+        {
+          "department": "زانست و تەکنەلۆجیای خواردنی",
+          "evening": "-",
+          "parallel": "57.349",
+          "online": "58.832"
+        }
+      ],
+      "کۆلێژی پەروەردەی بنەڕەتی ئامێدی": [
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "-",
+          "parallel": "67.199",
+          "online": "71.041"
+        },
+        {
+          "department": "زمانی کوردی",
+          "evening": "-",
+          "parallel": "60.059",
+          "online": "63.5"
+        },
+        {
+          "department": "کۆمەڵایەتییەکان",
+          "evening": "-",
+          "parallel": "59.199",
+          "online": "61.6"
+        }
+      ],
+      "کۆلێژی هونەرەکان": [
+        {
+          "department": "هونەری دیداری",
+          "evening": "-",
+          "parallel": "-",
+          "online": "-"
+        },
+        {
+          "department": "شانۆ",
+          "evening": "-",
+          "parallel": "-",
+          "online": "-"
+        },
+        {
+          "department": "موسیقا",
+          "evening": "-",
+          "parallel": "-",
+          "online": "-"
+        }
+      ]
+    },
+    "زانکۆی پۆلیتەکنیکی دهۆک": {
+      "کۆلێژی ئەندازیاری تەکنیکی": [
+        {
+          "department": "ڕێگا و پرد",
+          "evening": "-",
+          "parallel": "81.9",
+          "online": "86.9"
+        },
+        {
+          "department": "ئەندازیاری کیمیایی",
+          "evening": "-",
+          "parallel": "79.943",
+          "online": "84.44"
+        },
+        {
+          "department": "ئەندازیاری ئەمنی سایبەری",
+          "evening": "-",
+          "parallel": "88.2",
+          "online": "89.566"
+        },
+        {
+          "department": "ئەندازیاری وزە",
+          "evening": "-",
+          "parallel": "78.365",
+          "online": "82.566"
+        }
+      ],
+      "کۆلێژی تەکنیکی": [
+        {
+          "department": "تەکنەلۆجیای پیشەسازی دەندان",
+          "evening": "-",
+          "parallel": "93.429",
+          "online": "93.714"
+        },
+        {
+          "department": "تەکنەلۆجیای زانیاری IT",
+          "evening": "-",
+          "parallel": "70.3",
+          "online": "73"
+        },
+        {
+          "department": "تەکنەلۆجیای خواردنی",
+          "evening": "-",
+          "parallel": "58.699",
+          "online": "61.415"
+        },
+        {
+          "department": "زیرەکی دەستکرد AI",
+          "evening": "-",
+          "parallel": "75.277",
+          "online": "78.599"
+        }
+      ],
+      "کۆلێژی کارگێڕی تەکنیکی": [
+        {
+          "department": "تەکنیکی بەڕێوەبردنی کارووبار",
+          "evening": "58.212",
+          "parallel": "60.4",
+          "online": "63.3"
+        },
+        {
+          "department": "تەکنیکی دارایی",
+          "evening": "58.433",
+          "parallel": "59.799",
+          "online": "62.7"
+        },
+        {
+          "department": "تەکنیکی ڕاگەیاندن",
+          "evening": "-",
+          "parallel": "57.92",
+          "online": "62.4"
+        },
+        {
+          "department": "تەکنەلۆجیای ژمێریاری",
+          "evening": "-",
+          "parallel": "57.346",
+          "online": "62.1"
+        }
+      ],
+      "کۆلێژی تەکنیکی زاخۆ": [
+        {
+          "department": "ئابووری دیجیتاڵ",
+          "evening": "57.608",
+          "parallel": "60.6",
+          "online": "63.099"
+        },
+        {
+          "department": "تەکنیکی بەڕێوەبردنی کارووبار",
+          "evening": "57.608",
+          "parallel": "59.784",
+          "online": "62.423"
+        },
+        {
+          "department": "جیۆلۆجی نەوت",
+          "evening": "-",
+          "parallel": "-",
+          "online": "67.5"
+        }
+      ]
+    }
+  },
+  "halabja": {
+    "زانکۆی هەڵەبجە": {
+      "کۆلێژی ئەندازیاری": [
+        {
+          "department": "ئەندازیاری شارستانی",
+          "evening": "-",
+          "parallel": "86.64",
+          "online": "90.4"
+        },
+        {
+          "department": "ئەندازیاری کارەبا و ئەلیکترۆنیک",
+          "evening": "-",
+          "parallel": "82.64",
+          "online": "85.12"
+        }
+      ],
+      "کۆلێژی زانست": [
+        {
+          "department": "زانستی کۆمپیوتەر CS",
+          "evening": "-",
+          "parallel": "74.52",
+          "online": "79.62"
+        },
+        {
+          "department": "کیمیای ژیانی",
+          "evening": "-",
+          "parallel": "78",
+          "online": "84.269"
+        },
+        {
+          "department": "فیزیا",
+          "evening": "-",
+          "parallel": "59.112",
+          "online": "63.299"
+        }
+      ],
+      "کۆلێژی یاسا و کارگێڕی": [
+        {
+          "department": "یاسا",
+          "evening": "-",
+          "parallel": "79.4",
+          "online": "82.652"
+        },
+        {
+          "department": "بەڕێوەبردنی کارووبار",
+          "evening": "57.729",
+          "parallel": "59.1",
+          "online": "64.699"
+        },
+        {
+          "department": "مارکێتینگی نێودەوڵەتی",
+          "evening": "53.11",
+          "parallel": "60.799",
+          "online": "61.4"
+        }
+      ],
+      "کۆلێژی پەروەردەی بنەڕەتی": [
+        {
+          "department": "زمانی ئینگلیزی",
+          "evening": "61.8",
+          "parallel": "69.738",
+          "online": "73.999"
+        },
+        {
+          "department": "زمانی عەرەبی",
+          "evening": "-",
+          "parallel": "57.367",
+          "online": "59.394"
+        },
+        {
+          "department": "زانستی گشتی",
+          "evening": "-",
+          "parallel": "59.822",
+          "online": "64.08"
+        },
+        {
+          "department": "زانستی کۆمەڵایەتی",
+          "evening": "51.199",
+          "parallel": "54.169",
+          "online": "60.37"
+        }
+      ],
+      "کۆلێژی پەروەردەی شارەزوور": [
+        {
+          "department": "زمانی کوردی",
+          "evening": "54.352",
+          "parallel": "54.657",
+          "online": "58.5"
+        },
+        {
+          "department": "پەروەردەی تایبەت",
+          "evening": "50.303",
+          "parallel": "53.8",
+          "online": "58.8"
+        },
+        {
+          "department": "باخچەی مناڵان",
+          "evening": "52.105",
+          "parallel": "55",
+          "online": "57.2"
+        },
+        {
+          "department": "گەشەپێدانی مرۆڤی",
+          "evening": "50.699",
+          "parallel": "55.119",
+          "online": "60"
+        }
+      ],
+      "کۆلێژی زانستە مرۆییەکان": [
+        {
+          "department": "مێژوو",
+          "evening": "53.556",
+          "parallel": "58.2",
+          "online": "60"
+        },
+        {
+          "department": "گەشتیاری و گەشت",
+          "evening": "51.621",
+          "parallel": "54.419",
+          "online": "57.937"
+        },
+        {
+          "department": "ڕاگەیاندن",
+          "evening": "57.7",
+          "parallel": "60.999",
+          "online": "62.6"
+        },
+        {
+          "department": "بنەماکانی ئەدیان",
+          "evening": "54.399",
+          "parallel": "54.012",
+          "online": "60"
+        },
+        {
+          "department": "جوگرافیا",
+          "evening": "51.6",
+          "parallel": "56.833",
+          "online": "60"
+        }
+      ],
+      "کۆلێژی زانستە وەرزشییەکان": [
+        {
+          "department": "پەروەردەی وەرزشی",
+          "evening": "-",
+          "parallel": "55.314",
+          "online": "54.264"
+        },
+        {
+          "department": "زانستی وەرزش",
+          "evening": "-",
+          "parallel": "55.314",
+          "online": "54.203"
+        }
+      ]
+    }
+  }
+}
