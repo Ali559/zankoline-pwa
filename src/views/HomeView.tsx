@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { Search, Filter, X, CheckSquare, Square } from "lucide-react";
-import { gradeStatus } from "@/helpers";
+import { gradeStatus, governorateLabel } from "@/helpers";
 import { Badge } from "@/components/custom/Badge";
 import { useLanguage } from "@/components/custom/LanguageContext";
 import {
@@ -15,10 +15,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-// ─── Home / Search View ───────────────────────────────────────────────────────
 
 export function HomeView({
-  // name,
   grade,
   selected,
   setSelected,
@@ -28,13 +26,14 @@ export function HomeView({
   selected: EligibleDepartment[];
   setSelected: (s: EligibleDepartment[]) => void;
 }) {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
   const [search, setSearch] = useState("");
-  const [filterGov, setFilterGov] = useState("");
-  const [filterStatus, setFilterStatus] = useState("");
+  const [filterGov, setFilterGov] = useState("all");
+  const [filterStatus, setFilterStatus] = useState("all");
   const [faculties, setFaculties] = useState<EligibleDepartment[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const govs = governorates.sort();
+
   useEffect(() => {
     let isMounted = true;
     setIsLoading(true);
@@ -67,13 +66,18 @@ export function HomeView({
         p.universityName.toLowerCase().includes(q) ||
         p.facultyName.toLowerCase().includes(q) ||
         p.departmentName.toLowerCase().includes(q) ||
-        p.governorate.toLowerCase().includes(q);
-      const matchGov = !filterGov || p.governorate === filterGov;
+        p.governorate.toLowerCase().includes(q) ||
+        governorateLabel(p.governorate, t).toLowerCase().includes(q);
+      const matchGov =
+        !filterGov ||
+        filterGov === "all" ||
+        p.governorate === filterGov;
       const status = gradeStatus(p.cutoffGeneral ?? 0, grade);
-      const matchStatus = !filterStatus || status === filterStatus;
+      const matchStatus =
+        !filterStatus || filterStatus === "all" || status === filterStatus;
       return matchSearch && matchGov && matchStatus;
     });
-  }, [search, filterGov, filterStatus, grade, faculties]);
+  }, [search, filterGov, filterStatus, grade, faculties, t]);
 
   const allPageSelected =
     filtered.length > 0 &&
@@ -106,208 +110,190 @@ export function HomeView({
     }
   };
 
-  const hasFilters = search || filterGov || filterStatus;
+  const hasFilters =
+    search || (filterGov && filterGov !== "all") || (filterStatus && filterStatus !== "all");
   const clearFilters = () => {
     setSearch("");
-    setFilterGov("");
-    setFilterStatus("");
+    setFilterGov("all");
+    setFilterStatus("all");
   };
+
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center min-h-screen">
+      <div className="flex items-center justify-center min-h-[50vh]">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading application data...</p>
+          <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-primary mx-auto" />
+          <p className="mt-4 text-muted-foreground">Loading application data...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="flex flex-col h-full">
-      {/* Header */}
-      <div className="border-b border-border bg-card px-4 md:px-6 py-4 space-y-3 shrink-0">
-        <div className="flex items-center justify-between">
-          <div>
-            <h1 className="text-lg font-semibold text-foreground">
-              {t("searchProgramsTitle")}
-            </h1>
-            <p className="text-sm text-muted-foreground">
-              {t("searchProgramsSummary", {
-                count: filtered.length,
-                selected: selected.length,
-              })}
-            </p>
-          </div>
+    <div className="page-shell">
+      <div className="page-header">
+        <div>
+          <h1 className="page-title">{t("searchProgramsTitle")}</h1>
+          <p className="page-subtitle">
+            {t("searchProgramsSummary", {
+              count: filtered.length,
+              selected: selected.length,
+            })}
+          </p>
         </div>
 
-        {/* Search + filters */}
-        <div className="flex flex-col sm:flex-row gap-2">
-          <div className="relative flex-1">
+        <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div className="relative w-full md:w-[300px] md:shrink-0">
             <Search
-              size={14}
-              className="absolute inset-s-3 top-1/2 -translate-y-1/2 text-muted-foreground mx-1"
+              size={16}
+              className="absolute inset-s-3 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none"
             />
             <input
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               placeholder={t("searchPlaceholder")}
-              className="w-full h-9 ps-8 pe-3 py-1 rounded-lg border border-border text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring transition"
+              className="search-input"
             />
           </div>
-          <Select value={filterGov} onValueChange={setFilterGov}>
-            <SelectTrigger className="w-40">
-              <SelectValue placeholder={t("allGovernorates")} />
-            </SelectTrigger>
 
-            <SelectContent>
-              <SelectItem value="all">{t("allGovernorates")}</SelectItem>
+          <div className="flex flex-col gap-2 w-full md:flex-row md:items-center md:w-auto md:shrink-0">
+            <Select value={filterGov} onValueChange={setFilterGov}>
+              <SelectTrigger className="filter-select md:w-44">
+                <SelectValue placeholder={t("allGovernorates")} />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">{t("allGovernorates")}</SelectItem>
+                {govs.map((g) => (
+                  <SelectItem key={g} value={g}>
+                    {governorateLabel(g, t)}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
 
-              {govs.map((g) => (
-                <SelectItem key={g} value={g}>
-                  {g}
+            <Select value={filterStatus} onValueChange={setFilterStatus}>
+              <SelectTrigger className="filter-select md:w-40">
+                <SelectValue placeholder={t("allStatuses")} />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">{t("allStatuses")}</SelectItem>
+                <SelectItem value="qualified">{t("statusQualified")}</SelectItem>
+                <SelectItem value="borderline">
+                  {t("statusBorderline")}
                 </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-          <Select value={filterStatus} onValueChange={setFilterStatus}>
-            <SelectTrigger className="w-40">
-              <SelectValue placeholder={t("allGovernorates")} />
-            </SelectTrigger>
+                <SelectItem value="unlikely">{t("statusUnlikely")}</SelectItem>
+              </SelectContent>
+            </Select>
 
-            <SelectContent>
-              <SelectItem value="">{t("allStatuses")}</SelectItem>
-              <SelectItem value="qualified">{t("statusQualified")}</SelectItem>
-              <SelectItem value="borderline">
-                {t("statusBorderline")}
-              </SelectItem>
-              <SelectItem value="unlikely">{t("statusUnlikely")}</SelectItem>
-            </SelectContent>
-          </Select>
-          {hasFilters && (
-            <button
-              onClick={clearFilters}
-              className="h-9 px-3 rounded-lg border border-border bg-card text-sm text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors flex items-center gap-1.5"
-            >
-              <X size={13} /> {t("clear")}
-            </button>
-          )}
+            {hasFilters && (
+              <button
+                onClick={clearFilters}
+                className="h-10 px-4 rounded-lg border border-input bg-input-background text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-secondary transition-colors flex items-center justify-center gap-1.5 w-full md:w-auto"
+              >
+                <X size={14} />
+                {t("clear")}
+              </button>
+            )}
+          </div>
         </div>
       </div>
 
-      {/* Table */}
-      <div className="flex-1 overflow-auto">
-        <table className="w-full text-sm min-w-175">
-          <thead className="sticky top-0 bg-secondary z-10">
-            <tr className="border-b border-border">
-              <th className="w-10 px-4 py-3 text-start cursor-pointer">
-                <button
-                  onClick={toggleAll}
-                  className="text-muted-foreground hover:text-foreground transition-colors"
-                >
-                  {allPageSelected ? (
-                    <CheckSquare size={15} className="text-primary" />
-                  ) : (
-                    <Square size={15} />
-                  )}
-                </button>
-              </th>
-              <th className="px-3 py-3 text-start font-medium text-muted-foreground whitespace-nowrap">
-                #
-              </th>
-              <th className="px-3 py-3 text-start font-medium text-muted-foreground">
-                {t("colUniversity")}
-              </th>
-              <th className="px-3 py-3 text-start font-medium text-muted-foreground">
-                {t("colFaculty")}
-              </th>
-              <th className="px-3 py-3 text-start font-medium text-muted-foreground">
-                {t("colDepartment")}
-              </th>
-              <th className="px-3 py-3 text-start font-medium text-muted-foreground whitespace-nowrap">
-                {t("colGovernorate")}
-              </th>
-              <th className="px-3 py-3 text-start font-medium text-muted-foreground whitespace-nowrap">
-                {t("colMinGrade")}
-              </th>
-              <th className="px-3 py-3 text-start font-medium text-muted-foreground whitespace-nowrap">
-                {t("colEvening")}
-              </th>
-              <th className="px-3 py-3 text-start font-medium text-muted-foreground whitespace-nowrap">
-                {t("colParallel")}
-              </th>
-              <th className="px-3 py-3 text-start font-medium text-muted-foreground">
-                {t("colStatus")}
-              </th>
-            </tr>
-          </thead>
-          <tbody
-            className={`divide-y divide-border ${language === "ckb" ? "" : "text-xl"}`}
-          >
-            {filtered.map((p, i) => {
-              const isSelected = selectedField(p.thresholdId);
-              const status = gradeStatus(p.cutoffGeneral ?? 0, grade);
-              return (
-                <tr
-                  key={p.departmentId}
-                  onClick={() => toggleRow(p.thresholdId)}
-                  className={`cursor-pointer transition-colors ${isSelected ? "bg-accent/40" : "hover:bg-secondary/60"}`}
-                >
-                  <td className="px-4 py-3 cursor-pointer">
-                    <button
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        toggleRow(p.thresholdId);
-                      }}
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {isSelected ? (
-                        <CheckSquare size={15} className="text-primary" />
-                      ) : (
-                        <Square size={15} />
-                      )}
-                    </button>
-                  </td>
-                  <td className="px-3 py-3 text-muted-foreground tabular-nums">
-                    {i + 1}
-                  </td>
-                  <td className="px-3 py-3 font-medium text-foreground whitespace-nowrap">
-                    {p.universityName}
-                  </td>
-                  <td className="px-3 py-3 text-foreground">{p.facultyName}</td>
-                  <td className="px-3 py-3 text-muted-foreground">
-                    {p.departmentName}
-                  </td>
-                  <td className="px-3 py-3 text-muted-foreground whitespace-nowrap">
-                    {p.governorate}
-                  </td>
-                  <td className="px-3 py-3 font-mono text-sm font-medium text-foreground tabular-nums">
-                    {(p.cutoffGeneral ?? 0).toFixed(1)}%
-                  </td>
-                  <td className="px-3 py-3 font-mono text-sm font-medium text-foreground tabular-nums">
-                    {(p.cutoffEvening ?? 0).toFixed(1)}%
-                  </td>
-                  <td className="px-3 py-3 font-mono text-sm font-medium text-foreground tabular-nums">
-                    {(p.cutoffParallel ?? 0).toFixed(1)}%
-                  </td>
-                  <td className="px-3 py-3">
-                    <Badge status={status} />
-                  </td>
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
-        {filtered.length === 0 && (
-          <div className="flex flex-col items-center justify-center py-20 text-muted-foreground">
+      <div className="page-content">
+        {filtered.length === 0 ? (
+          <div className="empty-state">
             <Filter size={32} className="mb-3 opacity-40" />
             <p className="text-sm font-medium">{t("noProgramsMatch")}</p>
             <button
               onClick={clearFilters}
-              className="mt-2 text-sm text-primary hover:underline"
+              className="mt-3 text-sm text-foreground underline-offset-2 hover:underline"
             >
               {t("clearFilters")}
             </button>
+          </div>
+        ) : (
+          <div className="data-table-card">
+            <table className="data-table min-w-[56rem]">
+              <thead>
+                <tr>
+                  <th className="w-12">
+                    <div className="flex justify-center">
+                      <button
+                        onClick={toggleAll}
+                        className="text-muted-foreground hover:text-foreground transition-colors"
+                        aria-label="Toggle all"
+                      >
+                        {allPageSelected ? (
+                          <CheckSquare size={16} className="text-primary" />
+                        ) : (
+                          <Square size={16} />
+                        )}
+                      </button>
+                    </div>
+                  </th>
+                  <th className="w-12">#</th>
+                  <th>{t("colUniversity")}</th>
+                  <th>{t("colFaculty")}</th>
+                  <th>{t("colDepartment")}</th>
+                  <th>{t("colGovernorate")}</th>
+                  <th>{t("colMinGrade")}</th>
+                  <th>{t("colEvening")}</th>
+                  <th>{t("colParallel")}</th>
+                  <th>{t("colStatus")}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filtered.map((p, i) => {
+                  const isSelected = selectedField(p.thresholdId);
+                  const status = gradeStatus(p.cutoffGeneral ?? 0, grade);
+                  return (
+                    <tr
+                      key={p.departmentId}
+                      onClick={() => toggleRow(p.thresholdId)}
+                      className={`cursor-pointer ${isSelected ? "data-table-row-selected" : ""}`}
+                    >
+                      <td>
+                        <div className="flex justify-center">
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              toggleRow(p.thresholdId);
+                            }}
+                            className="text-muted-foreground hover:text-primary transition-colors"
+                          >
+                            {isSelected ? (
+                              <CheckSquare size={16} className="text-primary" />
+                            ) : (
+                              <Square size={16} />
+                            )}
+                          </button>
+                        </div>
+                      </td>
+                      <td className="text-muted-foreground tabular-nums">{i + 1}</td>
+                      <td className="font-medium text-foreground">{p.universityName}</td>
+                      <td className="text-foreground">{p.facultyName}</td>
+                      <td className="text-muted-foreground">{p.departmentName}</td>
+                      <td className="text-muted-foreground">
+                        {governorateLabel(p.governorate, t)}
+                      </td>
+                      <td className="font-medium text-foreground tabular-nums">
+                        {(p.cutoffGeneral ?? 0).toFixed(1)}%
+                      </td>
+                      <td className="font-medium text-foreground tabular-nums">
+                        {(p.cutoffEvening ?? 0).toFixed(1)}%
+                      </td>
+                      <td className="font-medium text-foreground tabular-nums">
+                        {(p.cutoffParallel ?? 0).toFixed(1)}%
+                      </td>
+                      <td>
+                        <div className="flex justify-center">
+                          <Badge status={status} />
+                        </div>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
           </div>
         )}
       </div>

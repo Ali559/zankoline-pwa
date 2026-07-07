@@ -13,6 +13,7 @@ import {
 } from "@/components/custom/LanguageContext";
 import { LanguageSwitcher } from "@/components/custom/LangugeSwitcher";
 import { EditProfileDialog } from "@/components/custom/EditProfileDialog";
+import { ThemeToggle } from "@/components/custom/ThemeToggle";
 import { seedDatabase } from "./db/seed";
 import { updateApplicationForm, type EligibleDepartment } from "./db/queries";
 import { toast, Toaster } from "sonner";
@@ -108,8 +109,8 @@ function AppShell() {
     return (
       <div className="flex items-center justify-center min-h-screen">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading application data...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-foreground mx-auto"></div>
+          <p className="mt-4 text-muted-foreground">Loading application data...</p>
         </div>
       </div>
     );
@@ -122,7 +123,7 @@ function AppShell() {
           <p>{error}</p>
           <button
             onClick={() => window.location.reload()}
-            className="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+            className="mt-4 px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90"
           >
             Refresh
           </button>
@@ -150,24 +151,27 @@ function AppShell() {
 
       <main className="flex-1 overflow-hidden flex flex-col min-w-0">
         {/* Mobile header */}
-        <div className="md:hidden flex items-center justify-between border-b border-border bg-card px-4 h-14 shrink-0">
-          <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-primary flex items-center justify-center">
-              <GraduationCap size={14} className="text-white" />
+        <div className="md:hidden flex items-center justify-between border-b border-border bg-card px-3 h-14 shrink-0 gap-2">
+          <div className="flex items-center gap-2 min-w-0">
+            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center shrink-0">
+              <GraduationCap size={15} className="text-primary-foreground" />
             </div>
-            <span className="text-sm font-semibold text-foreground">
+            <span className="text-base font-semibold text-foreground truncate">
               {t("appName")}
             </span>
           </div>
-          <div className="flex items-center gap-1.5">
+          <div className="flex items-center gap-1.5 shrink-0">
+            <div className="w-28">
+              <ThemeToggle compact />
+            </div>
             <button
               type="button"
               onClick={() => setProfileDialogOpen(true)}
-              className="flex items-center gap-1 text-xs font-medium text-muted-foreground bg-accent px-2 py-2 rounded-md hover:bg-accent/80 transition-colors"
+              className="flex items-center gap-1.5 h-9 px-2.5 text-sm font-medium text-foreground bg-input-background border border-input rounded-lg hover:bg-secondary transition-colors"
               title={t("editProfile")}
             >
-              <span>{grade.toFixed(1)}%</span>
-              <Pencil size={12} />
+              <span className="tabular-nums">{grade.toFixed(1)}%</span>
+              <Pencil size={13} className="text-muted-foreground" />
             </button>
             <LanguageSwitcher compact />
             <button

@@ -3,7 +3,7 @@ import { useLanguage } from "@/components/custom/LanguageContext";
 
 // ─── Badge ────────────────────────────────────────────────────────────────────
 
-const STATUS_KEY = {
+export const STATUS_KEY = {
   qualified: "statusQualified",
   borderline: "statusBorderline",
   unlikely: "statusUnlikely",
@@ -15,7 +15,7 @@ export function Badge({ status }: { status: ReturnType<typeof gradeStatus> }) {
   const cls = statusStyles[status];
   return (
     <span
-      className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium border ${cls}`}
+      className={`inline-flex items-center px-2.5 py-1 rounded-md text-xs font-medium border ${cls}`}
     >
       {t(STATUS_KEY[status])}
     </span>

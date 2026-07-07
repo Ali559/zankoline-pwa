@@ -5,44 +5,43 @@
 
 :root {
   --font-size: 16px;
-  --font-rtl: 20px;
-  --background: #f9f9fb;
-  --foreground: #18181b;
+  --background: #fafaf9;
+  --foreground: #1c1917;
   --card: #ffffff;
-  --card-foreground: #18181b;
+  --card-foreground: #1c1917;
   --popover: #ffffff;
-  --popover-foreground: #18181b;
-  --primary: #4f46e5;
-  --primary-foreground: #ffffff;
-  --secondary: #f4f4f5;
-  --secondary-foreground: #18181b;
-  --muted: #f4f4f5;
-  --muted-foreground: #71717a;
-  --accent: #eef2ff;
-  --accent-foreground: #3730a3;
+  --popover-foreground: #1c1917;
+  --primary: #1c1917;
+  --primary-foreground: #fafaf9;
+  --secondary: #f5f5f4;
+  --secondary-foreground: #292524;
+  --muted: #f5f5f4;
+  --muted-foreground: #78716c;
+  --accent: #f5f5f4;
+  --accent-foreground: #1c1917;
   --destructive: #dc2626;
   --destructive-foreground: #ffffff;
-  --border: #e4e4e7;
-  --input: transparent;
-  --input-background: #f4f4f5;
-  --switch-background: #a1a1aa;
+  --border: #e7e5e4;
+  --input: #d6d3d1;
+  --input-background: #ffffff;
+  --switch-background: #a8a29e;
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: #6366f1;
-  --chart-1: #4f46e5;
-  --chart-2: #10b981;
-  --chart-3: #f59e0b;
-  --chart-4: #ef4444;
-  --chart-5: #8b5cf6;
+  --ring: #a8a29e;
+  --chart-1: #44403c;
+  --chart-2: #16a34a;
+  --chart-3: #d97706;
+  --chart-4: #dc2626;
+  --chart-5: #78716c;
   --radius: 0.5rem;
   --sidebar: #ffffff;
-  --sidebar-foreground: #18181b;
-  --sidebar-primary: #4f46e5;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #eef2ff;
-  --sidebar-accent-foreground: #3730a3;
-  --sidebar-border: #e4e4e7;
-  --sidebar-ring: #6366f1;
+  --sidebar-foreground: #1c1917;
+  --sidebar-primary: #1c1917;
+  --sidebar-primary-foreground: #fafaf9;
+  --sidebar-accent: #f5f5f4;
+  --sidebar-accent-foreground: #1c1917;
+  --sidebar-border: #e7e5e4;
+  --sidebar-ring: #a8a29e;
 }
 
 .dark {
@@ -62,24 +61,25 @@
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
+  --border: oklch(0.32 0 0);
+  --input: oklch(0.32 0 0);
+  --input-background: oklch(0.22 0 0);
   --ring: oklch(0.439 0 0);
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-1: oklch(0.556 0 0);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.985 0 0);
+  --sidebar-primary-foreground: oklch(0.205 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --sidebar-ring: oklch(0.556 0 0);
 }
 
 @theme inline {
@@ -128,70 +128,377 @@
     @apply border-border outline-ring/50;
   }
 
+  html {
+    font-size: var(--font-size);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
   html[lang="en"] {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", system-ui, sans-serif;
   }
 
   html[lang="ckb"] {
-    font-family: "UniSIRWAN Expo", sans-serif;
+    font-family: "UniSIRWAN Expo", system-ui, sans-serif;
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-optical-sizing: auto;
+    @apply bg-background text-foreground text-sm leading-normal;
   }
 
-  /**
-  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
-  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
-  */
-  html[dir="rtl"] {
-    font-size: var(--font-rtl);
-  }
-
-  html {
-    font-size: var(--font-size);
+  html[lang="ckb"] body {
+    line-height: 1.6;
   }
 
   h1 {
-    font-size: var(--text-2xl);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+    @apply text-xl font-semibold leading-tight tracking-tight;
   }
 
   h2 {
-    font-size: var(--text-xl);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+    @apply text-lg font-semibold leading-snug;
   }
 
   h3 {
-    font-size: var(--text-lg);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+    @apply text-base font-semibold leading-snug;
   }
 
   h4 {
-    font-size: var(--text-base);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+    @apply text-sm font-semibold leading-snug;
   }
 
   label {
-    font-size: var(--text-base);
-    font-weight: var(--font-weight-medium);
-    line-height: 1.5;
+    @apply text-sm font-medium leading-none;
   }
 
   button {
-    font-size: var(--text-base);
-    font-weight: var(--font-weight-medium);
+    @apply text-sm font-medium;
+  }
+
+  input,
+  textarea,
+  select {
+    @apply text-sm font-normal;
+  }
+}
+
+@layer components {
+  .form-field {
+    @apply space-y-2;
+  }
+
+  .form-label {
+    @apply block text-sm font-medium text-foreground;
+  }
+
+  .form-input {
+    @apply flex h-10 w-full rounded-lg border border-input bg-input-background px-3 text-sm text-foreground placeholder:text-muted-foreground transition outline-none focus-visible:border-foreground/30 focus-visible:ring-[3px] focus-visible:ring-foreground/10;
+  }
+
+  .search-input {
+    @apply flex h-10 w-full rounded-lg border border-input bg-input-background ps-9 pe-3 text-sm text-foreground placeholder:text-muted-foreground transition outline-none focus-visible:border-foreground/30 focus-visible:ring-[3px] focus-visible:ring-foreground/10;
+  }
+
+  .filter-select {
+    @apply h-10 w-full bg-input-background border-input text-sm;
+  }
+
+  .page-shell {
+    @apply flex flex-col h-full min-h-0;
+  }
+
+  .page-header {
+    @apply border-b border-border bg-card px-4 py-4 md:px-6 shrink-0 shadow-[0_1px_0_rgba(28,25,23,0.05)] dark:shadow-none space-y-4;
+  }
+
+  .page-header-row {
+    @apply flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between;
+  }
+
+  .page-content {
+    @apply flex-1 overflow-auto min-h-0 px-4 py-4 md:px-6 md:py-4;
+  }
+
+  .page-actions {
+    @apply flex gap-2 w-full sm:w-auto shrink-0;
+  }
+
+  .page-action-btn {
+    @apply h-10 flex-1 sm:flex-none sm:min-w-[8.75rem];
+  }
+
+  .data-table-card {
+    @apply bg-card border border-border rounded-xl overflow-hidden overflow-x-auto;
+  }
+
+  .data-table {
+    @apply w-full text-sm;
+  }
+
+  .data-table th,
+  .data-table td {
+    @apply px-3 py-3 text-center align-middle;
+  }
+
+  .data-table thead {
+    @apply sticky top-0 z-10 bg-muted;
+  }
+
+  .data-table thead th {
+    @apply text-sm font-semibold text-muted-foreground whitespace-nowrap;
+  }
+
+  .data-table tbody tr {
+    @apply border-b border-border last:border-b-0 transition-colors;
+  }
+
+  .data-table tbody tr:hover {
+    @apply bg-secondary/80;
+  }
+
+  .data-table-row-selected {
+    @apply bg-muted;
+  }
+
+  .form-error {
+    @apply text-xs text-destructive;
+  }
+
+  .page-title {
+    @apply text-base font-semibold text-foreground;
+  }
+
+  .page-subtitle {
+    @apply text-sm text-muted-foreground mt-1;
+  }
+
+  .empty-state {
+    @apply flex flex-col items-center justify-center py-16 text-muted-foreground text-center;
+  }
+}
+
+@media screen {
+  .print-only {
+    display: none !important;
+  }
+}
+
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 10mm 12mm;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  #print-area,
+  #print-area * {
+    visibility: visible;
+  }
+
+  #print-area {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
+
+  #print-area[lang="en"] .print-document,
+  #print-area[lang="en"] .print-table {
+    font-family: "Poppins", system-ui, sans-serif !important;
+  }
+
+  #print-area[lang="ckb"] .print-document,
+  #print-area[lang="ckb"] .print-table {
+    font-family: "UniSIRWAN Expo", "Tahoma", "Arial", sans-serif !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-header.print-only,
+  .print-footer.print-only {
+    display: block !important;
+  }
+
+  .print-table td .print-only {
+    display: inline !important;
+  }
+
+  .print-document {
+    color: #000 !important;
+    font-size: 11pt;
     line-height: 1.5;
   }
 
-  input {
-    font-size: var(--text-base);
-    font-weight: var(--font-weight-normal);
-    line-height: 1.5;
+  #print-area[dir="rtl"] .print-document,
+  #print-area[dir="rtl"] .print-table {
+    direction: rtl;
+  }
+
+  #print-area[dir="rtl"] .print-table .col-priority,
+  #print-area[dir="rtl"] .print-table .col-grade {
+    direction: ltr;
+  }
+
+  .print-header {
+    display: block !important;
+    margin-bottom: 5mm;
+    padding-bottom: 4mm;
+    border-bottom: 2px solid #000;
+  }
+
+  .print-header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10mm;
+    margin-bottom: 4mm;
+  }
+
+  .print-brand-title {
+    font-size: 18pt;
+    font-weight: 700;
+    margin: 0 0 1.5mm;
+    letter-spacing: normal;
+  }
+
+  .print-brand-subtitle {
+    font-size: 11pt;
+    color: #333;
+    margin: 0;
+  }
+
+  .print-academic-year {
+    font-size: 10pt;
+    font-weight: 600;
+    color: #333;
+    text-align: end;
+    white-space: nowrap;
+  }
+
+  .print-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3mm;
+  }
+
+  .print-meta-item {
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 2.5mm 3mm;
+    background: #f5f5f5 !important;
+  }
+
+  .print-meta-label {
+    display: block;
+    font-size: 9pt;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 1mm;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  .print-meta-value {
+    display: block;
+    font-size: 12pt;
+    font-weight: 700;
+    color: #000;
+  }
+
+  .print-table-wrap {
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    background: #fff !important;
+  }
+
+  .print-table {
+    width: 100% !important;
+    min-width: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: auto;
+    font-size: 10pt !important;
+    page-break-inside: auto;
+  }
+
+  .print-table thead {
+    display: table-header-group;
+    background: #e5e5e5 !important;
+    position: static !important;
+  }
+
+  .print-table th {
+    background: #e5e5e5 !important;
+    color: #000 !important;
+    font-weight: 700 !important;
+    font-size: 9.5pt !important;
+    padding: 3mm 2.5mm !important;
+    border: 1px solid #000 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    white-space: nowrap;
+  }
+
+  .print-table td {
+    color: #000 !important;
+    padding: 3mm 2.5mm !important;
+    border: 1px solid #555 !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    font-size: 10pt !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+  }
+
+  .print-table tbody tr {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .print-table tbody tr:nth-child(even) td {
+    background: #fafafa !important;
+  }
+
+  .print-table .col-priority {
+    width: 5%;
+  }
+
+  .print-table .col-grade {
+    width: 8%;
+    white-space: nowrap;
+  }
+
+  .print-table .col-status {
+    width: 10%;
+    white-space: nowrap;
+  }
+
+  .print-table .col-governorate {
+    width: 11%;
+  }
+
+  .print-footer {
+    display: block !important;
+    margin-top: 4mm;
+    padding-top: 3mm;
+    border-top: 1px solid #bbb;
+    font-size: 8pt;
+    color: #666;
+    text-align: center;
   }
 }

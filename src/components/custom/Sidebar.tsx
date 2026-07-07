@@ -41,16 +41,13 @@ export function Sidebar({
   const { t, dir } = useLanguage();
   const isRtl = dir === "rtl";
 
-  // The collapse chevron should point toward the edge it collapses to.
-  // In LTR the sidebar is on the left, so "collapse" points left (←).
-  // In RTL the sidebar is on the right, so "collapse" points right (→).
   const CollapseIcon = isRtl
     ? collapsed
-      ? ChevronLeft
-      : ChevronRight
-    : collapsed
       ? ChevronRight
-      : ChevronLeft;
+      : ChevronLeft
+    : collapsed
+      ? ChevronLeft
+      : ChevronRight;
 
   const nav = [
     { id: "home" as View, icon: Search, label: t("navSearch") },
@@ -127,7 +124,7 @@ export function Sidebar({
       {/* Bottom: language, grade + sign out */}
       <div className="px-2 pb-3 space-y-2 border-t border-border pt-3">
         <div className="w-full">
-          <ThemeToggle />
+          <ThemeToggle compact={collapsed} />
         </div>
         <div className={collapsed ? "w-full" : " w-full"}>
           <LanguageSwitcher compact={collapsed} />
@@ -137,20 +134,20 @@ export function Sidebar({
           <button
             type="button"
             onClick={onEditProfile}
-            className="w-full rounded-lg bg-accent px-3 py-2.5 text-start hover:bg-accent/80 transition-colors"
+            className="w-full rounded-lg bg-accent px-3 py-3 text-start hover:bg-accent/80 transition-colors"
           >
-            <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-0.5">
+            <p className="text-[11px] font-medium text-muted-foreground uppercase tracking-wide mb-1">
               {t("yourName")}
             </p>
-            <p className="text-sm font-semibold text-accent-foreground truncate mb-2">
+            <p className="text-sm font-semibold text-accent-foreground truncate mb-3">
               {name}
             </p>
             <div className="flex items-center justify-between gap-2">
               <div>
-                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-0.5">
+                <p className="text-[11px] font-medium text-muted-foreground uppercase tracking-wide mb-1">
                   {t("yourGrade")}
                 </p>
-                <p className="text-xl font-semibold text-accent-foreground">
+                <p className="text-lg font-semibold text-accent-foreground tabular-nums">
                   {grade.toFixed(1)}%
                 </p>
               </div>
@@ -175,7 +172,7 @@ export function Sidebar({
         <button
           onClick={onSignOut}
           title={collapsed ? t("signOut") : undefined}
-          className={`w-full flex items-center gap-2.5 rounded-lg px-2.5 h-9 text-sm font-medium text-muted-foreground hover:bg-red-50 hover:text-red-600 transition-colors ${collapsed ? "justify-center" : ""}`}
+          className={`w-full flex items-center gap-2.5 rounded-lg px-2.5 h-9 text-sm font-medium text-muted-foreground hover:bg-destructive/10 hover:text-destructive transition-colors ${collapsed ? "justify-center" : ""}`}
         >
           <LogOut size={16} className="shrink-0" />
           {!collapsed && <span>{t("signOut")}</span>}

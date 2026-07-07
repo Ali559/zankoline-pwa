@@ -2,6 +2,7 @@ import { useState } from "react";
 import { GraduationCap } from "lucide-react";
 import { LanguageSwitcher } from "@/components/custom/LangugeSwitcher";
 import { useLanguage } from "@/components/custom/LanguageContext";
+import { Button } from "@/components/ui/button";
 
 export function LoginView({
   onLogin,
@@ -29,42 +30,35 @@ export function LoginView({
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4 relative">
-      {/* Language switcher, top corner */}
-      <div className="absolute top-4 inset-e-4 px-24">
+      <div className="absolute top-4 inset-e-4">
         <LanguageSwitcher />
       </div>
 
       <div className="w-full max-w-sm">
-        {/* Logo */}
-        <div className="flex flex-col items-center mb-8">
+        <div className="flex flex-col items-center mb-8 text-center">
           <div className="w-12 h-12 rounded-xl bg-accent flex items-center justify-center mb-4 shadow-sm">
             <GraduationCap size={24} className="text-foreground" />
           </div>
-          <h1 className="text-2xl font-semibold text-foreground tracking-tight">
-            {t("appName")}
-          </h1>
-          <p className="text-sm text-muted-foreground mt-1">
+          <h1 className="text-foreground">{t("appName")}</h1>
+          <p className="text-sm text-muted-foreground mt-1.5">
             {t("appTagline")}
           </p>
         </div>
 
-        {/* Card */}
         <div className="bg-card border border-border rounded-xl p-6 shadow-sm">
-          <h2 className="text-base font-semibold text-foreground mb-1">
-            {t("loginTitle")}
-          </h2>
-          <p className="text-sm text-muted-foreground mb-5">
+          <h2 className="text-foreground mb-1">{t("loginTitle")}</h2>
+          <p className="text-sm text-muted-foreground mb-6">
             {t("loginSubtitle")}
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label className="block text-sm font-medium text-foreground my-1.5">
+          <form onSubmit={handleSubmit} className="space-y-5">
+            <div className="form-field">
+              <label htmlFor="login-name" className="form-label">
                 {t("loginNameLabel")}
               </label>
               <input
+                id="login-name"
                 type="text"
-                step="0.1"
                 maxLength={50}
                 placeholder={t("loginNamePlaceholder")}
                 value={nameInput}
@@ -72,12 +66,16 @@ export function LoginView({
                   setNameInput(e.target.value);
                   setError("");
                 }}
-                className="w-full h-10 px-3 rounded-lg border border-border text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring transition"
+                className="form-input"
               />
-              <label className="block text-sm font-medium text-foreground my-1.5">
+            </div>
+
+            <div className="form-field">
+              <label htmlFor="login-grade" className="form-label">
                 {t("loginGradeLabel")}
               </label>
               <input
+                id="login-grade"
                 type="number"
                 step="0.1"
                 min="50"
@@ -88,23 +86,18 @@ export function LoginView({
                   setInput(e.target.value);
                   setError("");
                 }}
-                className="w-full h-10 px-3 rounded-lg border border-border  text-foreground placeholder:text-muted-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring transition"
+                className="form-input"
               />
-              {error && (
-                <p className="mt-1.5 text-xs text-destructive">{error}</p>
-              )}
+              {error && <p className="form-error">{error}</p>}
             </div>
 
-            <button
-              type="submit"
-              className="w-full h-10 rounded-lg bg-primary text-primary-foreground text-sm font-medium "
-            >
+            <Button type="submit" className="w-full h-10">
               {t("loginSubmit")}
-            </button>
+            </Button>
           </form>
         </div>
 
-        <p className="text-center text-xs text-muted-foreground mt-6">
+        <p className="text-center text-xs text-muted-foreground mt-6 leading-relaxed">
           {t("loginFooter")}
         </p>
       </div>

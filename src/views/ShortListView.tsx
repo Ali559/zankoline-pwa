@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { gradeStatus } from "@/helpers";
-import { Badge } from "@/components/custom/Badge";
+import { gradeStatus, governorateLabel } from "@/helpers";
+import { Badge, STATUS_KEY } from "@/components/custom/Badge";
 import { useLanguage } from "@/components/custom/LanguageContext";
 import { BookMarked, Printer, GripVertical, Trash2, Save } from "lucide-react";
 import { createApplicationForm, type EligibleDepartment } from "@/db/queries";
@@ -10,9 +10,6 @@ import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 
 // ─── Shortlist View ───────────────────────────────────────────────────────────
-
-const GRID_TEMPLATE =
-  "2.25rem 2.5rem minmax(140px,1.3fr) minmax(110px,1fr) minmax(140px,1.4fr) minmax(100px,0.9fr) 90px 100px 2.5rem";
 
 export function ShortlistView({
   name,
@@ -34,11 +31,15 @@ export function ShortlistView({
 }) {
   const { t, dir, language } = useLanguage();
   const choices = selected;
+  const printDate = new Date().toLocaleDateString(
+    language === "ckb" ? "ar-IQ" : "en-GB",
+    { day: "numeric", month: "long", year: "numeric" },
+  );
 
   // Drag state
   const [draggingIndex, setDraggingIndex] = useState<number | null>(null);
   const [dragOverIndex, setDragOverIndex] = useState<number | null>(null);
-  const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const rowRefs = useRef<(HTMLTableRowElement | null)[]>([]);
   rowRefs.current.length = choices.length;
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [currentForm, setCurrentForm] = useState<Partial<ApplicationForm>>({});
@@ -176,226 +177,166 @@ export function ShortlistView({
         existingForm={currentForm}
         editMode={editMode} // Pass editMode to dialog to show appropriate title/button
       />
-      <style>{`
-        @media print {
-          body * { visibility: hidden; }
-          #print-area, #print-area * { visibility: visible; }
-          #print-area { position: absolute; top: 0; inset-inline-start: 0; width: 100%; }
-          .no-print { display: none !important; }
-          .print-grid { border: 1px solid #ccc; }
-          .print-row { border-bottom: 1px solid #ccc; }
-          .print-cell { padding: 6px 10px; font-size: 12px; }
-          .print-head { background: #f4f4f5; font-weight: 600; }
-        }
-      `}</style>
-
-      <div className="flex flex-col h-full">
-        {/* Header */}
-        <div className="border-b border-border bg-card px-4 md:px-6 py-4 flex items-center justify-between shrink-0 no-print">
-          <div>
-            <h1 className="text-lg font-semibold text-foreground">
-              {t("myChoicesTitle")}
-            </h1>
-            <p className="text-sm text-muted-foreground">
-              {t("myChoicesSummary", {
-                count: choices.length,
-                grade: grade.toFixed(1),
-              })}
-            </p>
-          </div>
-          {selected.length > 0 && (
-            <div className="flex-col sm:flex-row flex items-center gap-4 max-w-1/2 px-2">
-              <Button variant={"secondary"} onClick={() => window.print()}>
-                <Printer size={14} />
-                {t("printForm")}
-              </Button>
-              {!editMode && (
-                <Button variant={"default"} onClick={handleSaveClick}>
-                  <Save size={14} />
-                  {t("saveForLater")}
-                </Button>
-              )}
+      <div className="page-shell">
+        <div className="page-header no-print">
+          <div className="page-header-row">
+            <div className="min-w-0">
+              <h1 className="page-title">{t("myChoicesTitle")}</h1>
+              <p className="page-subtitle">
+                {t("myChoicesSummary", {
+                  count: choices.length,
+                  grade: grade.toFixed(1),
+                })}
+              </p>
             </div>
-          )}
+            {selected.length > 0 && (
+              <div className="page-actions">
+                <Button
+                  variant="outline"
+                  className="page-action-btn"
+                  onClick={() => window.print()}
+                >
+                  <Printer size={15} />
+                  {t("printForm")}
+                </Button>
+                {!editMode && (
+                  <Button
+                    variant="default"
+                    className="page-action-btn"
+                    onClick={handleSaveClick}
+                  >
+                    <Save size={15} />
+                    {t("saveForLater")}
+                  </Button>
+                )}
+              </div>
+            )}
+          </div>
         </div>
 
-        <div
-          id="print-area"
-          dir={dir}
-          className="flex-1 overflow-auto p-4 md:p-6"
-        >
-          {/* Print header */}
-          <div className="hidden print:block mb-6">
-            <h1 className="text-xl font-bold">
-              {t("appName")} — {t("appTagline")}
-            </h1>
-            <p className="text-sm text-gray-600">
-              {t("printHeaderSubtitle", {
-                grade: grade.toFixed(1),
-                date: new Date().toLocaleDateString("en-GB"),
-              })}
-            </p>
-            <hr className="my-3" />
-          </div>
+        <div id="print-area" dir={dir} lang={language} className="page-content">
+          <div className="print-document">
+            <header className="print-header print-only">
+              <div className="print-header-top">
+                <div>
+                  <h1 className="print-brand-title">{t("appName")}</h1>
+                  <p className="print-brand-subtitle">{t("printFormTitle")}</p>
+                </div>
+                <p className="print-academic-year">{t("printAcademicYear")}</p>
+              </div>
+              <div className="print-meta-grid">
+                <div className="print-meta-item">
+                  <span className="print-meta-label">{t("printStudentLabel")}</span>
+                  <span className="print-meta-value">{name}</span>
+                </div>
+                <div className="print-meta-item">
+                  <span className="print-meta-label">{t("printGradeLabel")}</span>
+                  <span className="print-meta-value">{grade.toFixed(1)}%</span>
+                </div>
+                <div className="print-meta-item">
+                  <span className="print-meta-label">{t("printDateLabel")}</span>
+                  <span className="print-meta-value">{printDate}</span>
+                </div>
+              </div>
+            </header>
 
           {choices.length === 0 ? (
-            <div className="flex flex-col items-center justify-center py-24 text-muted-foreground no-print">
+            <div className="empty-state no-print">
               <BookMarked size={36} className="mb-3 opacity-30" />
               <p className="text-sm font-medium">{t("noProgramsSelected")}</p>
               <p className="text-xs mt-1">{t("noProgramsSelectedHint")}</p>
             </div>
           ) : (
-            <div
-              role="table"
-              aria-label={t("myChoicesTitle")}
-              className="bg-card border border-border rounded-xl overflow-hidden shadow-sm min-w-160 print-grid select-none"
-            >
-              {/* Header row */}
-              <div
-                role="row"
-                className="grid bg-secondary border-b border-border print-row print-head"
-                style={{ gridTemplateColumns: GRID_TEMPLATE }}
+            <>
+              <div className="data-table-card print-table-wrap">
+              <table
+                className="data-table print-table min-w-[48rem]"
+                role="table"
+                dir={dir}
+                lang={language}
+                aria-label={t("myChoicesTitle")}
               >
-                <div role="columnheader" className="no-print" />
-                <div
-                  role="columnheader"
-                  className="px-4 py-3 text-start text-sm font-medium text-muted-foreground print-cell"
-                >
-                  #
-                </div>
-                <div
-                  role="columnheader"
-                  className="px-4 py-3 text-start text-sm font-medium text-muted-foreground print-cell"
-                >
-                  {t("colUniversity")}
-                </div>
-                <div
-                  role="columnheader"
-                  className="px-4 py-3 text-start text-sm font-medium text-muted-foreground print-cell"
-                >
-                  {t("colFaculty")}
-                </div>
-                <div
-                  role="columnheader"
-                  className="px-4 py-3 text-start text-sm font-medium text-muted-foreground print-cell"
-                >
-                  {t("colDepartment")}
-                </div>
-                <div
-                  role="columnheader"
-                  className="px-4 py-3 text-start text-sm font-medium text-muted-foreground print-cell"
-                >
-                  {t("colGovernorate")}
-                </div>
-                <div
-                  role="columnheader"
-                  className="px-4 py-3 text-start text-sm font-medium text-muted-foreground print-cell"
-                >
-                  {t("colMinGrade")}
-                </div>
-                <div
-                  role="columnheader"
-                  className="px-4 py-3 text-start text-sm font-medium text-muted-foreground no-print"
-                >
-                  {t("colStatus")}
-                </div>
-                <div role="columnheader" className="no-print" />
-              </div>
-
-              {/* Data rows */}
-              <div
-                role="rowgroup"
-                className={`${language === "ckb" ? "" : "text-xl"}`}
-              >
-                {choices.map((p, i) => {
-                  const status = gradeStatus(p.cutoffGeneral ?? 0, grade);
-                  const isDragOver = dragOverIndex === i && draggingIndex !== i;
-                  const isDragging = draggingIndex === i;
-                  return (
-                    <div
-                      key={p.thresholdId}
-                      ref={(el) => {
-                        rowRefs.current[i] = el;
-                      }}
-                      role="row"
-                      className={`
-                        grid items-center border-b border-border last:border-b-0 transition-colors group print-row
-                        ${isDragOver ? "bg-accent/60 border-t-2 border-t-primary" : "hover:bg-secondary/40"}
-                        ${isDragging ? "opacity-50 bg-accent/30" : "opacity-100"}
-                      `}
-                      style={{ gridTemplateColumns: GRID_TEMPLATE }}
-                    >
-                      {/* Drag handle */}
-                      <div
-                        role="cell"
-                        className="ps-3 pe-1 py-3 no-print flex items-center"
+                <thead>
+                  <tr>
+                    <th className="w-10 no-print" />
+                    <th className="col-priority w-12">#</th>
+                    <th>{t("colUniversity")}</th>
+                    <th>{t("colFaculty")}</th>
+                    <th>{t("colDepartment")}</th>
+                    <th className="col-governorate">{t("colGovernorate")}</th>
+                    <th className="col-grade">{t("colMinGrade")}</th>
+                    <th className="col-status">{t("colStatus")}</th>
+                    <th className="w-10 no-print" />
+                  </tr>
+                </thead>
+                <tbody>
+                  {choices.map((p, i) => {
+                    const status = gradeStatus(p.cutoffGeneral ?? 0, grade);
+                    const isDragOver = dragOverIndex === i && draggingIndex !== i;
+                    const isDragging = draggingIndex === i;
+                    return (
+                      <tr
+                        key={p.thresholdId}
+                        ref={(el) => {
+                          rowRefs.current[i] = el;
+                        }}
+                        className={`group ${isDragOver ? "data-table-row-selected border-t-2 border-t-foreground/30" : ""} ${isDragging ? "opacity-50" : ""}`}
                       >
-                        <span
-                          onPointerDown={(e) => handlePointerDownOnHandle(e, i)}
-                          className="cursor-grab active:cursor-grabbing text-muted-foreground/40 group-hover:text-muted-foreground transition-colors flex items-center touch-none"
-                          style={{ touchAction: "none" }}
-                        >
-                          <GripVertical size={14} />
-                        </span>
-                      </div>
-                      <div
-                        role="cell"
-                        className="px-4 py-3 text-sm text-muted-foreground tabular-nums font-medium print-cell"
-                      >
-                        {i + 1}
-                      </div>
-                      <div
-                        role="cell"
-                        className="px-4 py-3 text-sm font-medium text-foreground whitespace-nowrap overflow-hidden text-ellipsis print-cell"
-                      >
-                        {p.universityName}
-                      </div>
-                      <div
-                        role="cell"
-                        className="px-4 py-3 text-sm text-foreground overflow-hidden text-ellipsis print-cell"
-                      >
-                        {p.facultyName}
-                      </div>
-                      <div
-                        role="cell"
-                        className="px-4 py-3 text-sm text-muted-foreground overflow-hidden text-ellipsis print-cell"
-                      >
-                        {p.departmentName}
-                      </div>
-                      <div
-                        role="cell"
-                        className="px-4 py-3 text-sm text-muted-foreground whitespace-nowrap overflow-hidden text-ellipsis print-cell"
-                      >
-                        {p.governorate}
-                      </div>
-                      <div
-                        role="cell"
-                        className="px-4 py-3 font-mono text-sm font-medium tabular-nums print-cell"
-                      >
-                        {(p.cutoffGeneral ?? 0).toFixed(1)}%
-                      </div>
-                      <div role="cell" className="px-4 py-3 no-print">
-                        <Badge status={status} />
-                      </div>
-                      {/* Delete */}
-                      <div
-                        role="cell"
-                        className="pe-3 ps-1 py-3 no-print flex items-center"
-                      >
-                        <button
-                          onClick={() => handleDelete(p.thresholdId)}
-                          className="w-7 h-7 rounded-md flex items-center justify-center text-muted-foreground/40 hover:text-red-500 hover:bg-red-50 transition-colors opacity-0 group-hover:opacity-100"
-                          title={t("removeProgram")}
-                        >
-                          <Trash2 size={13} />
-                        </button>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
+                        <td className="no-print">
+                          <div className="flex justify-center">
+                            <span
+                              onPointerDown={(e) => handlePointerDownOnHandle(e, i)}
+                              className="cursor-grab active:cursor-grabbing text-muted-foreground/40 group-hover:text-muted-foreground transition-colors flex items-center touch-none"
+                              style={{ touchAction: "none" }}
+                            >
+                              <GripVertical size={14} />
+                            </span>
+                          </div>
+                        </td>
+                        <td className="col-priority text-muted-foreground tabular-nums font-medium">
+                          {i + 1}
+                        </td>
+                        <td className="font-medium text-foreground">{p.universityName}</td>
+                        <td className="text-foreground">{p.facultyName}</td>
+                        <td className="text-muted-foreground">{p.departmentName}</td>
+                        <td className="col-governorate text-muted-foreground">
+                          {governorateLabel(p.governorate, t)}
+                        </td>
+                        <td className="col-grade font-medium tabular-nums">
+                          {(p.cutoffGeneral ?? 0).toFixed(1)}%
+                        </td>
+                        <td className="col-status">
+                          <span className="no-print inline-flex justify-center">
+                            <Badge status={status} />
+                          </span>
+                          <span className="print-only font-medium">
+                            {t(STATUS_KEY[status])}
+                          </span>
+                        </td>
+                        <td className="no-print">
+                          <div className="flex justify-center">
+                            <button
+                              onClick={() => handleDelete(p.thresholdId)}
+                              className="w-8 h-8 rounded-md flex items-center justify-center text-muted-foreground/50 hover:text-destructive hover:bg-destructive/10 transition-colors opacity-0 group-hover:opacity-100"
+                              title={t("removeProgram")}
+                            >
+                              <Trash2 size={14} />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
             </div>
+
+              <footer className="print-footer print-only">
+                {t("appName")} · {t("loginFooter")}
+              </footer>
+            </>
           )}
+          </div>
         </div>
       </div>
     </>

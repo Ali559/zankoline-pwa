@@ -54,16 +54,17 @@ export function EditProfileDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent>
+      <DialogContent className="gap-5 sm:max-w-md">
         <DialogHeader>
           <DialogTitle>{t("editProfileTitle")}</DialogTitle>
         </DialogHeader>
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <div>
-            <label className="block text-sm font-medium text-foreground mb-1.5">
+        <form onSubmit={handleSubmit} className="space-y-5">
+          <div className="form-field">
+            <label htmlFor="profile-name" className="form-label">
               {t("loginNameLabel")}
             </label>
             <input
+              id="profile-name"
               type="text"
               maxLength={50}
               value={nameInput}
@@ -71,14 +72,16 @@ export function EditProfileDialog({
                 setNameInput(e.target.value);
                 setError("");
               }}
-              className="w-full h-10 px-3 rounded-lg border border-border text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+              className="form-input"
             />
           </div>
-          <div>
-            <label className="block text-sm font-medium text-foreground mb-1.5">
+
+          <div className="form-field">
+            <label htmlFor="profile-grade" className="form-label">
               {t("loginGradeLabel")}
             </label>
             <input
+              id="profile-grade"
               type="number"
               step="0.1"
               min="50"
@@ -88,11 +91,12 @@ export function EditProfileDialog({
                 setGradeInput(e.target.value);
                 setError("");
               }}
-              className="w-full h-10 px-3 rounded-lg border border-border text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+              className="form-input"
             />
-            {error && <p className="mt-1.5 text-xs text-destructive">{error}</p>}
+            {error && <p className="form-error">{error}</p>}
           </div>
-          <DialogFooter>
+
+          <DialogFooter className="gap-2 sm:gap-2">
             <Button type="button" variant="outline" onClick={() => onOpenChange(false)}>
               {t("cancelText")}
             </Button>

@@ -65,25 +65,23 @@ export function HistoryView({
     return (
       <div className="flex items-center justify-center min-h-screen">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading application data...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-foreground mx-auto"></div>
+          <p className="mt-4 text-muted-foreground">Loading application data...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="flex flex-col h-full">
-      <div className="border-b border-border bg-card px-4 md:px-6 py-4 shrink-0">
-        <h1 className="text-lg font-semibold text-foreground">
-          {t("historyTitle")}
-        </h1>
-        <p className="text-sm text-muted-foreground">{t("historySubtitle")}</p>
+    <div className="page-shell">
+      <div className="page-header">
+        <h1 className="page-title">{t("historyTitle")}</h1>
+        <p className="page-subtitle">{t("historySubtitle")}</p>
       </div>
 
-      <div className="flex-1 overflow-auto p-4 md:p-6">
+      <div className="page-content">
         {!forms.length ? (
-          <div className="flex flex-col items-center justify-center py-24 text-muted-foreground">
+          <div className="empty-state">
             <History size={36} className="mb-3 opacity-30" />
             <p className="text-sm font-medium">{t("noHistoryYet")}</p>
             <p className="text-xs mt-1">{t("noHistoryHint")}</p>
@@ -93,7 +91,7 @@ export function HistoryView({
             {forms.map((s) => (
               <div
                 key={s.id}
-                className="bg-card border border-border rounded-xl p-4 shadow-sm hover:border-primary/30 transition-colors"
+                className="bg-card border border-border rounded-xl p-4 shadow-sm hover:border-foreground/20 transition-colors"
               >
                 <div className="flex items-start justify-between gap-4">
                   <div className="flex items-center gap-3">
@@ -124,16 +122,16 @@ export function HistoryView({
                   <div className="flex items-center gap-1">
                     <button
                       onClick={() => onViewSession(s.choices, s.id ?? 0)}
-                      className="flex items-center gap-1.5 h-8 px-3 rounded-lg border border-border bg-secondary text-xs font-medium text-foreground hover:bg-accent hover:border-primary/30 hover:text-accent-foreground transition-colors shrink-0"
+                      className="flex items-center gap-1.5 h-10 px-4 rounded-lg border border-border bg-secondary text-sm font-medium text-foreground hover:bg-muted transition-colors shrink-0"
                     >
-                      <Eye size={12} />
+                      <Eye size={14} />
                       {t("viewDetails")}
                     </button>
                     <button
                       onClick={() => onDeleteSession(s.id ?? 0)}
-                      className="flex items-center gap-1.5 h-8 px-3 font-medium text-foreground hover:text-red-500 transition-colors shrink-0"
+                      className="flex items-center justify-center h-10 w-10 rounded-lg border border-border bg-secondary text-foreground hover:bg-destructive/10 hover:text-destructive hover:border-destructive/30 transition-colors shrink-0"
                     >
-                      <Trash2 size={12} />
+                      <Trash2 size={14} />
                     </button>
                   </div>
                 </div>

@@ -57,6 +57,16 @@ export const translations = {
     noProgramsMatch: "No programs match your filters",
     clearFilters: "Clear filters",
 
+    // Governorates
+    govDuhok: "Duhok",
+    govSul: "Sulaymaniyah",
+    govErbil: "Erbil",
+    govHalabja: "Halabja",
+
+    // Theme
+    themeLight: "Light",
+    themeDark: "Dark",
+
     // Status labels
     statusQualified: "Qualified",
     statusBorderline: "Borderline",
@@ -67,6 +77,11 @@ export const translations = {
     myChoicesTitle: "My Choices",
     myChoicesSummary: "{count} programs selected · Grade: {grade}%",
     printForm: "Print",
+    printFormTitle: "University Application Choices",
+    printStudentLabel: "Student Name",
+    printGradeLabel: "Total Grade",
+    printDateLabel: "Date",
+    printAcademicYear: "Academic Year 2024–2025",
     saveForLater: "Save",
     updateForm: "Update",
     printHeaderSubtitle: "Student Grade: {grade}% | Date: {date}",
@@ -159,6 +174,16 @@ export const translations = {
     noProgramsMatch: "هیچ بەشێک لەگەڵ پاڵاوتنەکانت یەک ناگرێتەوە",
     clearFilters: "سڕینەوەی پاڵاوتنەکان",
 
+    // Governorates
+    govDuhok: "دهۆک",
+    govSul: "سلێمانی",
+    govErbil: "هەولێر",
+    govHalabja: "هەڵەبجە",
+
+    // Theme
+    themeLight: "ڕووناک",
+    themeDark: "تاریک",
+
     // Status labels
     statusQualified: "شایستە",
     statusBorderline: "نزیک",
@@ -169,6 +194,11 @@ export const translations = {
     myChoicesTitle: "هەلبژاردنەکانم",
     myChoicesSummary: "{count} بەش هەلبژێردراوە · نمرە: {grade}%",
     printForm: "چاپ بکە",
+    printFormTitle: "هەلبژاردنەکانی وەرگرتن بۆ زانکۆ",
+    printStudentLabel: "ناوی خوێندکار",
+    printGradeLabel: "کۆی نمرە",
+    printDateLabel: "بەروار",
+    printAcademicYear: "ساڵی خوێندنی ٢٠٢٤–٢٠٢٥",
     saveForLater: "هەڵیبگرە",
     updateForm: "بگۆڕە",
     printHeaderSubtitle: "نمرەی خوێندکار: {grade}% | بەروار: {date}",

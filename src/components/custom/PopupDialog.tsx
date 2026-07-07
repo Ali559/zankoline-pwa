@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { X, Save, AlertCircle } from "lucide-react";
 import type { ApplicationForm } from "@/db/schema";
 import { useLanguage } from "./LanguageContext";
+import { Button } from "@/components/ui/button";
 
 interface PopupDialogProps {
   isOpen: boolean;
@@ -60,117 +61,88 @@ export const PopupDialog = ({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center">
-      {/* Backdrop */}
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div
         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
         onClick={handleClose}
       />
 
-      {/* Dialog */}
-      <div className="relative bg-white dark:bg-gray-800 rounded-xl shadow-2xl w-full max-w-md mx-4 animate-in fade-in zoom-in duration-200">
-        {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
-          <div className="flex items-center gap-3">
-            <Save className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-            <h2 className="text-sm sm:text-xl font-semibold text-gray-900 dark:text-white">
+      <div className="relative bg-card border border-border rounded-xl shadow-lg w-full max-w-md animate-in fade-in zoom-in duration-200">
+        <div className="flex items-center justify-between gap-3 p-5 border-b border-border">
+          <div className="flex items-center gap-2.5 min-w-0">
+            <Save className="w-4 h-4 shrink-0 text-primary" />
+            <h2 className="text-base font-semibold text-foreground truncate">
               {editMode ? t("headerTextUpdate") : t("headerText")}
             </h2>
           </div>
           <button
             onClick={handleClose}
-            className="p-1 rounded-lg text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+            className="p-1.5 rounded-md text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
           >
-            <X className="w-5 h-5" />
+            <X className="w-4 h-4" />
           </button>
         </div>
 
-        {/* Content */}
-        <div className="p-6">
-          <div className="space-y-4">
-            {/* Student Info Display */}
-            {existingForm?.studentName && (
-              <div className="bg-gray-50 dark:bg-gray-700/50 rounded-lg p-3">
-                <div className="text-sm text-gray-600 dark:text-gray-400">
-                  {t("studentName")}
+        <div className="p-5 space-y-5">
+          {existingForm?.studentName && (
+            <div className="rounded-lg bg-accent/60 px-3 py-3 space-y-1">
+              <div className="text-sm text-muted-foreground">
+                {t("studentName")}
+                {": "}
+                <span className="font-medium text-foreground">
+                  {existingForm.studentName}
+                </span>
+              </div>
+              {existingForm.studentGrade && (
+                <div className="text-sm text-muted-foreground">
+                  {t("studentGrade")}
                   {": "}
-                  <span className="font-medium text-gray-900 dark:text-white">
-                    {existingForm.studentName}
+                  <span className="font-medium text-foreground tabular-nums">
+                    {existingForm.studentGrade}
                   </span>
                 </div>
-                {existingForm.studentGrade && (
-                  <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
-                    {t("studentGrade")}
-                    {": "}
-                    <span className="font-medium text-gray-900 dark:text-white">
-                      {existingForm.studentGrade}
-                    </span>
-                  </div>
-                )}
-              </div>
-            )}
-
-            {/* Label Input */}
-            <div>
-              <label
-                htmlFor="form-label"
-                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-              >
-                {t("formDescription")}
-              </label>
-              <input
-                maxLength={50}
-                id="form-label"
-                type="text"
-                value={label}
-                onChange={(e) => {
-                  setLabel(e.target.value);
-                  setError("");
-                }}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter") handleSave();
-                }}
-                placeholder={t("inputPlaceholder")}
-                className="w-full px-4 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600 
-                         bg-white dark:bg-gray-700 text-gray-900 dark:text-white
-                         placeholder-gray-400 dark:placeholder-gray-500
-                         focus:ring-2 focus:ring-blue-500 focus:border-transparent
-                         transition-all duration-200"
-                autoFocus
-              />
-              <p className="mt-1.5 text-xs text-gray-500 dark:text-gray-400">
-                {t("labelText")}
-              </p>
+              )}
             </div>
+          )}
 
-            {/* Error Message */}
-            {error && (
-              <div className="flex items-center gap-2 text-red-600 dark:text-red-400 bg-red-50 dark:bg-red-900/20 rounded-lg p-3">
-                <AlertCircle className="w-4 h-4 shrink-0" />
-                <p className="text-sm">{error}</p>
-              </div>
-            )}
+          <div className="form-field">
+            <label htmlFor="form-label" className="form-label">
+              {t("formDescription")}
+            </label>
+            <input
+              maxLength={50}
+              id="form-label"
+              type="text"
+              value={label}
+              onChange={(e) => {
+                setLabel(e.target.value);
+                setError("");
+              }}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") handleSave();
+              }}
+              placeholder={t("inputPlaceholder")}
+              className="form-input"
+              autoFocus
+            />
+            <p className="text-xs text-muted-foreground">{t("labelText")}</p>
           </div>
+
+          {error && (
+            <div className="flex items-center gap-2 text-destructive bg-destructive/10 rounded-lg p-3">
+              <AlertCircle className="w-4 h-4 shrink-0" />
+              <p className="text-sm">{error}</p>
+            </div>
+          )}
         </div>
 
-        {/* Footer */}
-        <div className="flex items-center justify-end gap-3 p-6 border-t border-gray-200 dark:border-gray-700">
-          <button
-            onClick={handleClose}
-            className="px-4 py-2.5 text-sm font-medium text-gray-700 dark:text-gray-300 
-                     hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
-          >
+        <div className="flex items-center justify-end gap-2 p-5 border-t border-border">
+          <Button type="button" variant="outline" onClick={handleClose}>
             {t("cancelText")}
-          </button>
-          <button
-            onClick={handleSave}
-            className="px-6 py-2.5 text-sm font-medium text-white bg-blue-600 
-                     hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 
-                     rounded-lg transition-colors focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
-                     dark:focus:ring-offset-gray-800"
-          >
+          </Button>
+          <Button type="button" onClick={handleSave}>
             {t("buttonText")}
-          </button>
+          </Button>
         </div>
       </div>
     </div>
