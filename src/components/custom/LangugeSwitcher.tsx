@@ -34,7 +34,7 @@ export function LanguageSwitcher({ compact = false }: { compact?: boolean }) {
         onClick={() => setOpen(!open)}
         title={t("language")}
         className={`w-full flex items-center justify-center gap-1.5 h-8 rounded-md text-xs font-medium text-muted-foreground border bg-background dark:bg-input/30 hover:bg-accent hover:text-foreground transition-colors ${
-          compact ? "min-w-14 justify-center" : "px-2.5"
+          compact ? " justify-center" : "px-2.5"
         }`}
       >
         <Languages size={14} />
